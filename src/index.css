@@ -7,26 +7,65 @@
   color: rgba(255, 255, 255, 0.87);
   background-color: #1c1c1c;
 
+  --UIorange: #f18d37;
+  --FontVerySmall: 16px;
+  --FontSmall: 20px;
+  --FontMid: 24px;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.backgroundUIorange {
+  background-color: #f18d37;
 }
-a:hover {
-  color: #535bf2;
+
+.colorUIorange {
+  color: #f18d37;
+}
+
+.fontSizeVerySmall {
+  font-size: 16px;
+}
+
+.fontSizeSmall {
+  font-size: 20px;
+}
+
+.fontSizeMid {
+  font-size: 24px;
+}
+
+h2 {
+  color: #f18d37;
+  font-size: 48px;
+}
+
+/* Szerokość paska przewijania */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Tło paska przewijania */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Kolor kursora paska przewijania */
+::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+}
+
+/* Podświetlenie kursora paska przewijania */
+::-webkit-scrollbar-thumb:hover {
+  background: #909090;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  overflow-x: hidden; /* Ukryj pasek przewijania poziomego */
+  overflow-y: auto; /* Pozostaw pasek przewijania pionowego */
 }
 
 h1 {
@@ -53,21 +92,49 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
 .header {
   width: 100%;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.235);
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin: 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
+  width: 25%;
+  height: 100%;
+}
+
+.headerCenter {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.headerRight {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+  width: 20%;
+  height: 100%;
+}
+
+.headerItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+}
+
+.menuItemText {
+  cursor: pointer;
 }

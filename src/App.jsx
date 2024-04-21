@@ -1,10 +1,13 @@
 import { useState } from "react";
+import Header from "./components/header";
+import Telebim from "./components/telebim";
 import "./App.css";
 
 function App() {
   return (
     <>
-      <div className="header">sidlesham tyres</div>
+      <Header />
+      <Telebim />
       <h1>Sidlesham Tyres</h1>
     </>
   );
