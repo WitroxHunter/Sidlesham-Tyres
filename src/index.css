@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Lexend-Regular;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,6 +16,60 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Lexend-Black";
+  src: url("./assets/fonts/Lexend/Lexend-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Lexend-Bold";
+  src: url("./assets/fonts/Lexend/Lexend-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Lexend-ExtraBold";
+  src: url("./assets/fonts/Lexend/Lexend-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Lexend-ExtraLight";
+  src: url("./assets/fonts/Lexend/Lexend-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Lexend-Light";
+  src: url("./assets/fonts/Lexend/Lexend-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Lexend-Medium";
+  src: url("./assets/fonts/Lexend/Lexend-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Lexend-Regular";
+  src: url("./assets/fonts/Lexend/Lexend-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Lexend-SemiBold";
+  src: url("./assets/fonts/Lexend/Lexend-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Lexend-Thin";
+  src: url("./assets/fonts/Lexend/Lexend-Thin.ttf") format("truetype");
+  font-weight: 100;
 }
 
 .backgroundUIorange {

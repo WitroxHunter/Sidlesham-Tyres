@@ -12,6 +12,7 @@ export default function Telebim() {
             customer satisfaction.
           </span>
           <button className="telebimButton1">Call us now</button>
+          <button className="telebimButton2">Learn more</button>
         </div>
       </div>
     </>
