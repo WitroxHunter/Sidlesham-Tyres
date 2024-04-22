@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Header from "./components/header";
 import Telebim from "./components/telebim";
+import SectionTitle from "./components/sectionTitle";
 import "./App.css";
 
 function App() {
@@ -10,11 +11,38 @@ function App() {
       <Telebim />
       <div className="contactBox">telefon email location</div>
       <div className="mainContent">
-        <div className="sectionWhyUs">why us</div>
-        <div className="sectionOurOffer">Our offer</div>
-        <div className="sectionCustomerTestimonials">customer testimonials</div>
-        <div className="sectionGetAQuote">contact form</div>
-        <div className="sectionReachUs"></div>
+        <div className="section sectionWhyUs">
+          <SectionTitle
+            title="Why us?"
+            subtitle="Because you can count on us!"
+          />
+          <div className="sectionContent">abc</div>
+        </div>
+        <div className="section sectionOurOffer">
+          <SectionTitle title="Our offer" subtitle="Find your perfect need" />
+          <div className="sectionContent">abc</div>
+        </div>
+        <div className="section sectionCustomerTestimonials">
+          <SectionTitle
+            title="Customer Testimonials"
+            subtitle="What people say about us"
+          />
+          <div className="sectionContent"></div>
+        </div>
+        <div className="section sectionGetAQuote">
+          <SectionTitle
+            title="Get a quote"
+            subtitle="Let us know what you need"
+          />
+          <div className="sectionContent">abc</div>
+        </div>
+        <div className="section sectionReachUs">
+          <SectionTitle
+            title="Reach us"
+            subtitle="And finally get what you care about"
+          />
+          <div className="sectionContent">abc</div>
+        </div>
       </div>
     </>
   );
