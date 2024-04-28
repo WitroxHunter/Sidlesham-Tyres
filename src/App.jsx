@@ -19,11 +19,11 @@ function App() {
             title="Why us?"
             subtitle="Because you can count on us!"
           />
-          <div className="sectionContent">abc</div>
+          <div className="sectionContent"></div>
         </div>
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
-          <div className="sectionContent">abc</div>
+          <div className="sectionContent"></div>
         </div>
         <div className="section sectionCustomerTestimonials">
           <SectionTitle
@@ -37,14 +37,14 @@ function App() {
             title="Get a quote"
             subtitle="Let us know what you need"
           />
-          <div className="sectionContent">abc</div>
+          <div className="sectionContent"></div>
         </div>
         <div className="section sectionReachUs">
           <SectionTitle
             title="Reach us"
             subtitle="And finally get what you care about"
           />
-          <div className="sectionContent">abc</div>
+          <div className="sectionContent"></div>
         </div>
         <Footer />
       </div>

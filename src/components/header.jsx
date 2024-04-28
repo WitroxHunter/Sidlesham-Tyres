@@ -42,7 +42,7 @@ export default function Header() {
           <MenuItem name="Contact us" />
         </div>
         <div className="headerRight">
-          <img src={hamburger} />
+          <img className="header-hamburger" src={hamburger} />
         </div>
       </div>
     </>

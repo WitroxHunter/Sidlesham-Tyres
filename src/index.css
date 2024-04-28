@@ -5,8 +5,9 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1c1c1c;
+  background-color: #070707;
 
+  --IconsBackground: #333333;
   --UIlightgrey: #222222;
   --UIgrey: #111111;
   --UIbackground: #070707;
@@ -185,6 +186,10 @@ button {
   height: 100%;
 }
 
+.header-hamburger {
+  cursor: pointer;
+}
+
 .menuItemText {
   cursor: pointer;
 }
@@ -211,12 +216,18 @@ button {
 }
 
 .footer {
-  height: 300px;
-  width: 70%;
+  height: 380px;
+  width: 100%;
+  justify-content: center;
   background-color: var(--UIgrey);
+}
+
+.footer-content {
+  padding: 0 15% 0 15%;
+  width: 70%;
+  height: 90%;
   display: flex;
   justify-content: space-between;
-  padding: 0 30%;
 }
 
 .footer-section {
@@ -224,4 +235,93 @@ button {
   flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+.footer-content-left,
+.footer-content-middle,
+.footer-content-right {
+  height: 100%;
+  width: 100%;
+}
+
+.footer-content-left {
+}
+
+.footer-content-middle {
+  padding-top: 50px;
+}
+
+.footer-content-right {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.day-container {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 6px;
+}
+
+.footer-day-box {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  display: inline-flex;
+  background-color: var(--IconsBackground);
+}
+
+.footer-working-hours {
+  padding: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content-title {
+  display: block;
+  font-family: Lexend-SemiBold;
+  font-size: var(--FontSmall);
+}
+
+.footer-content-label {
+  display: block;
+  margin-top: 3px;
+  font-size: var(--FontSmall);
+}
+
+.footer-content-icon-background {
+  height: 30px;
+  width: 30px;
+  background-color: var(--IconsBackground);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.location-additional-margin {
+  padding: 0 0 0 40px !important;
+  margin-top: -30px;
+  display: block;
+}
+
+.footer-content-icon {
+  height: 20px;
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
+    brightness(103%) contrast(115%);
+}
+
+.footer-bottom {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
 }

@@ -7,7 +7,8 @@ export default function ContactBar() {
     <>
       <div className="contact-bar">
         <div className="contact-info">
-          <img className="contact-info-icon" src={call} /> 01243 641986
+          <img className="contact-info-icon" src={call} />
+          +44 1243 641986
         </div>
         <div className="contact-info">
           <img className="contact-info-icon" src={mail} />
