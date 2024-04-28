@@ -1,5 +1,6 @@
 import hamburger from "../assets/icons/hamburger.svg";
 import logo from "../assets/logo.png";
+import { useState, useEffect } from "react";
 
 function MenuItem(props) {
   return (
@@ -12,9 +13,23 @@ function MenuItem(props) {
 }
 
 export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <div className="header">
+      <div className={scrolled ? "scrolled header" : "header"}>
         <div className="headerLeft">
           <img src={logo} />
         </div>

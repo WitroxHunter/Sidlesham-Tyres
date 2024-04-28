@@ -8,6 +8,7 @@
   background-color: #1c1c1c;
 
   --UIlightgrey: #222222;
+  --UIgrey: #111111;
   --UIbackground: #070707;
   --UIorange: #f18d37;
   --FontVerySmall: 16px;
@@ -131,32 +132,23 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  border: transparent;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 .header {
+  transition: 0.3s;
   width: 100%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.235);
   display: flex;
   position: fixed;
   top: 0;
   margin: 0;
+}
+
+.header.scrolled {
+  transition: 0.3s;
+  background-color: var(--UIgrey);
 }
 
 .headerLeft {
@@ -215,4 +207,20 @@ button:focus-visible {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.footer {
+  height: 300px;
+  width: 70%;
+  background-color: var(--UIgrey);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30%;
+}
+
+.footer-section {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
 }

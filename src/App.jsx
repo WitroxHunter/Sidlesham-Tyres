@@ -3,9 +3,8 @@ import Header from "./components/header";
 import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
-import location from "./assets/icons/location.svg";
-import call from "./assets/icons/call.svg";
-import mail from "./assets/icons/mail.svg";
+import Footer from "./components/footer";
+
 import "./App.css";
 
 function App() {
@@ -47,6 +46,7 @@ function App() {
           />
           <div className="sectionContent">abc</div>
         </div>
+        <Footer />
       </div>
     </>
   );
