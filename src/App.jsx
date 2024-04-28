@@ -2,6 +2,10 @@ import { useState } from "react";
 import Header from "./components/header";
 import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
+import ContactBar from "./components/contact-bar";
+import location from "./assets/icons/location.svg";
+import call from "./assets/icons/call.svg";
+import mail from "./assets/icons/mail.svg";
 import "./App.css";
 
 function App() {
@@ -9,7 +13,7 @@ function App() {
     <>
       <Header />
       <Telebim />
-      <div className="contactBox">telefon email location</div>
+      <ContactBar />
       <div className="mainContent">
         <div className="section sectionWhyUs">
           <SectionTitle
