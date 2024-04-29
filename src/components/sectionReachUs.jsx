@@ -1,9 +1,45 @@
+import call from "../assets/icons/call.svg";
+import mail from "../assets/icons/mail.svg";
+
+function WorkingHours(props) {
+    return (
+        <>
+            <div className="day-container">
+                <div className="footer-day-box">{props.day}</div>
+                <div className="footer-working-hours">{props.hours}</div>
+            </div>
+        </>
+    );
+}
+
 export default function sectionReachUs(props) {
     return (
         <>
             <div className="contentReachUs">
                 <div className="leftSide">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate ipsum eget feugiat ullamcorper. Vivamus sed porta nunc, ac elementum magna. In euismod fermentum sollicitudin. Donec feugiat massa et lacus fringilla condimentum. Nam tortor tellus, ornare id urna nec, volutpat sagittis ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vulputate ipsum eget feugiat ullamcorper. Vivamus sed porta nunc, ac elementum magna. In euismod fermentum sollicitudin. Donec feugiat massa et lacus fringilla condimentum. Nam tortor tellus, ornare id urna nec, volutpat sagittis ligula.
+                    <span className="footer-content-title">We are open:</span>
+                    <WorkingHours day="Mon" hours="8:30 - 5:00" />
+                    <WorkingHours day="Tue" hours="8:30 - 5:00" />
+                    <WorkingHours day="Wed" hours="8:30 - 5:00" />
+                    <WorkingHours day="Thu" hours="8:30 - 5:00" />
+                    <WorkingHours day="Fri" hours="8:30 - 5:00" />
+                    <WorkingHours day="Sat" hours="CLOSED" />
+                    <WorkingHours day="Sun" hours="CLOSED" />
+
+                    <span className="footer-content-title">Contact info:</span>
+                    <div className="reachUsContactDiv">
+                        <div className="reachUsContactIconBack">
+                            <img src={call} className="reachUsContactIcon" />
+                        </div>
+                        <span>01243 641986</span>
+                    </div>
+
+                    <div className="reachUsContactDiv">
+                        <div className="reachUsContactIconBack">
+                            <img src={mail} className="reachUsContactIcon" />
+                        </div>
+                        <span>enquiries@sidleshamtyres.co.uk</span>
+                    </div>
                 </div>
                 <div className="rightSide">
                     <iframe

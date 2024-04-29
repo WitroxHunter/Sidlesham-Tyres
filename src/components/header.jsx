@@ -38,7 +38,7 @@ export default function Header() {
           <MenuItem name="About us" />
           <MenuItem name="Services" />
           <MenuItem name="Tyre tech" />
-          <MenuItem name="Events & news" />
+          <MenuItem name="News" />
           <MenuItem name="Contact us" />
         </div>
         <div className="headerRight">
