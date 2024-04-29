@@ -19,6 +19,8 @@ export default function ContactBar() {
           Chichester, West Sussex, PO20 7PX
         </div>
       </div>
+
+      <div className="contactBottomDarkening"></div>
     </>
   );
 }

@@ -1,7 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 :root {
-  font-family: Lexend-Regular;
   line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -24,59 +24,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@font-face {
-  font-family: "Lexend-Black";
-  src: url("./assets/fonts/Lexend/Lexend-Black.ttf") format("truetype");
-  font-weight: 900;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Lexend-Bold";
-  src: url("./assets/fonts/Lexend/Lexend-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Lexend-ExtraBold";
-  src: url("./assets/fonts/Lexend/Lexend-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Lexend-ExtraLight";
-  src: url("./assets/fonts/Lexend/Lexend-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Lexend-Light";
-  src: url("./assets/fonts/Lexend/Lexend-Light.ttf") format("truetype");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Lexend-Medium";
-  src: url("./assets/fonts/Lexend/Lexend-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Lexend-Regular";
-  src: url("./assets/fonts/Lexend/Lexend-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Lexend-SemiBold";
-  src: url("./assets/fonts/Lexend/Lexend-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "Lexend-Thin";
-  src: url("./assets/fonts/Lexend/Lexend-Thin.ttf") format("truetype");
-  font-weight: 100;
-}
 
 .backgroundUIorange {
   background-color: #f18d37;
@@ -103,32 +60,23 @@ h2 {
   font-size: 48px;
 }
 
-/* Szerokość paska przewijania */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Tło paska przewijania */
 ::-webkit-scrollbar-track {
   background: #f1f1f100;
 }
 
-/* Kolor kursora paska przewijania */
 ::-webkit-scrollbar-thumb {
   background: #d9d9d9;
 }
 
-/* Podświetlenie kursora paska przewijania */
 ::-webkit-scrollbar-thumb:hover {
   background: #909090;
 }
 
-body {
-  overflow-x: hidden;
-  /* Ukryj pasek przewijania poziomego */
-  overflow-y: auto;
-  /* Pozostaw pasek przewijania pionowego */
-}
+
 
 h1 {
   font-size: 3.2em;
@@ -154,7 +102,7 @@ button {
   position: fixed;
   top: 0;
   margin: 0;
-  z-index: 2;
+  z-index: 99999;
 }
 
 .header.scrolled {
@@ -212,14 +160,13 @@ button {
   width: 0%;
   height: 2px;
   top: 100%;
-  left: 50%;
+  left: 0%;
 
   transition: 0.25s;
 }
 
 .menuItemText:hover::before {
   width: 100%;
-  left: 0%;
 }
 
 /*--------------------------SECTION--------------------------*/
@@ -240,7 +187,6 @@ button {
 
 .sectionTitle {
   color: var(--UIorange);
-  font-family: Lexend-SemiBold;
   font-size: var(--FontBig);
   margin: 10px 0;
 }
@@ -254,8 +200,9 @@ button {
 }
 
 .sectionSubTitle {
-  width: 75%;
+  width: fit-content;
   text-align: center;
+  text-wrap: nowrap;
   background-color: var(--UIlightgrey);
   padding: 3px 10px;
   border-radius: 5px;
@@ -276,14 +223,15 @@ button {
 /*--------------------------FOOTER--------------------------*/
 
 .footer {
-  height: 380px;
+  margin-top: 100px;
+  height: fit-content;
   width: 100%;
   justify-content: center;
   background-color: var(--UIgrey);
 }
 
 .footer-content {
-  padding: 0 15% 0 15%;
+  margin: auto;
   width: 70%;
   height: 90%;
   display: flex;
@@ -338,7 +286,6 @@ button {
 
 .footer-content-title {
   display: block;
-  font-family: Lexend-SemiBold;
   font-size: var(--FontSmall);
 }
 
@@ -372,10 +319,7 @@ button {
 }
 
 .footer-bottom {
-  width: 100%;
-  height: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+  padding: 10px;
   font-size: 13px;
 }

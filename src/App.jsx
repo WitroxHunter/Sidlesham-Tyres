@@ -4,6 +4,7 @@ import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
 import SectionWhyUs from "./components/sectionWhyUs";
+import SectionReachUs from "./components/sectionReachUs";
 import Footer from "./components/footer";
 
 import "./App.css";
@@ -14,6 +15,7 @@ function App() {
       <Header />
       <Telebim />
       <ContactBar />
+
       <main>
         <div className="section sectionWhyUs">
           <SectionTitle
@@ -47,7 +49,9 @@ function App() {
             title="Reach us"
             subtitle="And finally get what you care about"
           />
-          <div className="sectionContent"></div>
+          <div className="sectionContent">
+            <SectionReachUs />
+          </div>
         </div>
       </main>
       <Footer />
