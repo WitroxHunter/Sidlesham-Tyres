@@ -12,6 +12,7 @@
   --UIgrey: #111111;
   --UIbackground: #070707;
   --UIorange: #f18d37;
+  --White: #fff;
   --FontVerySmall: 16px;
   --FontSmall: 20px;
   --FontMid: 24px;
@@ -123,8 +124,10 @@ h2 {
 }
 
 body {
-  overflow-x: hidden; /* Ukryj pasek przewijania poziomego */
-  overflow-y: auto; /* Pozostaw pasek przewijania pionowego */
+  overflow-x: hidden;
+  /* Ukryj pasek przewijania poziomego */
+  overflow-y: auto;
+  /* Pozostaw pasek przewijania pionowego */
 }
 
 h1 {
@@ -136,6 +139,12 @@ button {
   border: transparent;
   cursor: pointer;
 }
+
+/*--------------------------HEADER--------------------------*/
+
+/*--------------------------HEADER--------------------------*/
+
+/*--------------------------HEADER--------------------------*/
 
 .header {
   transition: 0.3s;
@@ -179,6 +188,7 @@ button {
 }
 
 .headerItem {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -191,21 +201,32 @@ button {
 }
 
 .menuItemText {
+  position: relative;
   cursor: pointer;
 }
 
-.sectionTitle {
-  color: var(--UIorange);
-  font-family: Lexend-SemiBold;
-  font-size: var(--FontBig);
-  margin: 10px 0;
+.menuItemText::before {
+  position: absolute;
+  content: "";
+  background-color: var(--White);
+  width: 0%;
+  height: 2px;
+  top: 100%;
+  left: 50%;
+
+  transition: 0.25s;
 }
 
-.sectionSubTitle {
-  background-color: var(--UIlightgrey);
-  padding: 3px 10px;
-  border-radius: 5px;
+.menuItemText:hover::before {
+  width: 100%;
+  left: 0%;
 }
+
+/*--------------------------SECTION--------------------------*/
+
+/*--------------------------SECTION--------------------------*/
+
+/*--------------------------SECTION--------------------------*/
 
 .sectionTitleBox {
   width: 100%;
@@ -214,6 +235,45 @@ button {
   align-items: center;
   justify-content: center;
 }
+
+/*----SECTION TITLE----*/
+
+.sectionTitle {
+  color: var(--UIorange);
+  font-family: Lexend-SemiBold;
+  font-size: var(--FontBig);
+  margin: 10px 0;
+}
+
+/*----SECTION SUBTITLE----*/
+
+.sectionSubLine {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.sectionSubTitle {
+  width: 75%;
+  text-align: center;
+  background-color: var(--UIlightgrey);
+  padding: 3px 10px;
+  border-radius: 5px;
+  margin: 0 20px;
+}
+
+.sectionLine {
+  background-color: var(--UIlightgrey);
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+/*--------------------------FOOTER--------------------------*/
+
+/*--------------------------FOOTER--------------------------*/
+
+/*--------------------------FOOTER--------------------------*/
 
 .footer {
   height: 380px;
@@ -244,8 +304,7 @@ button {
   width: 100%;
 }
 
-.footer-content-left {
-}
+.footer-content-left {}
 
 .footer-content-middle {
   padding-top: 50px;
@@ -260,25 +319,21 @@ button {
 
 .day-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 200px;
   margin-top: 6px;
 }
 
 .footer-day-box {
   width: 100px;
-  justify-content: center;
-  align-items: center;
   border-radius: 3px;
-  display: inline-flex;
+  text-align: center;
   background-color: var(--IconsBackground);
 }
 
 .footer-working-hours {
   padding: 0 10px 0 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 
 .footer-content-title {
@@ -313,8 +368,7 @@ button {
 
 .footer-content-icon {
   height: 20px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
-    brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
 }
 
 .footer-bottom {

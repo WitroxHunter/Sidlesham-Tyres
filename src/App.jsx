@@ -3,6 +3,7 @@ import Header from "./components/header";
 import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
+import SectionWhyUs from "./components/sectionWhyUs";
 import Footer from "./components/footer";
 
 import "./App.css";
@@ -13,13 +14,15 @@ function App() {
       <Header />
       <Telebim />
       <ContactBar />
-      <div className="mainContent">
+      <main>
         <div className="section sectionWhyUs">
           <SectionTitle
             title="Why us?"
             subtitle="Because you can count on us!"
           />
-          <div className="sectionContent"></div>
+          <div className="sectionContent">
+            <SectionWhyUs />
+          </div>
         </div>
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
@@ -46,8 +49,8 @@ function App() {
           />
           <div className="sectionContent"></div>
         </div>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </>
   );
 }

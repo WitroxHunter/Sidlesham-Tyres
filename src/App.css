@@ -3,6 +3,12 @@ body {
   padding: 0;
 }
 
+/*--------------------------TELEBIM--------------------------*/
+
+/*--------------------------TELEBIM--------------------------*/
+
+/*--------------------------TELEBIM--------------------------*/
+
 .telebim {
   background-image: url(./assets/Background.png);
   background-size: cover;
@@ -54,7 +60,7 @@ body {
   background: hsl(28, 87%, 48%);
   border-radius: inherit;
   z-index: -1;
-  transition: transform 0.5s;
+  transition: transform 0.25s;
   transform-origin: 0 0;
   transform: scaleX(0);
 }
@@ -79,7 +85,7 @@ body {
   background: hsl(0, 0%, 90%);
   border-radius: inherit;
   z-index: -1;
-  transition: transform 0.5s;
+  transition: transform 0.25s;
   transform-origin: 0 0;
   transform: scaleX(0);
 }
@@ -88,10 +94,16 @@ body {
   transform: scaleX(1);
 }
 
+/*--------------------------CONTACT BAR--------------------------*/
+
+/*--------------------------CONTACT BAR--------------------------*/
+
+/*--------------------------CONTACT BAR--------------------------*/
+
 .contact-bar {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 -60px 60px rgba(0, 0, 0, 1); /* Cień do góry */
+  box-shadow: 0 -60px 60px rgba(0, 0, 0, 1);
   background-color: black;
   width: 100%;
   height: 110px;
@@ -107,16 +119,13 @@ body {
 .contact-info-icon {
   width: 25px;
   margin: 0 5px 0 0;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
-    brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
 }
 
-.mainContent {
-  width: 100%;
+main {
+  margin: auto;
+  width: 60%;
   background-color: var(--UIbackground);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .section {
@@ -124,11 +133,67 @@ body {
 }
 
 .sectionContent {
-  padding: 0 15% 0 15%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 40px;
   width: 100%;
-  height: 100px;
-  /* outline jesli chcesz widziec gdzie jest kontent */
 }
 
+/*--------------------------WHY US--------------------------*/
+
+/*--------------------------WHY US--------------------------*/
+
+/*--------------------------WHY US--------------------------*/
+
 .sectionWhyUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.whyUsFeature {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 5px 15px 5px 5px;
+  margin-bottom: 20px;
+
+  z-index: 20;
+}
+
+.whyUsFeature::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skewX(10deg);
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(180deg, rgba(39, 39, 39, 1) 0%, rgba(28, 28, 28, 1) 100%);
+
+  z-index: -20;
+}
+
+.whyUsFeature h2 {
+  margin-right: 10px;
+  display: inline;
+  color: white;
+  font-weight: bold;
+  font-size: var(--FontMid);
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rightSide img {
+  width: 80%;
 }

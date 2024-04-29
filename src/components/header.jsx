@@ -6,7 +6,7 @@ function MenuItem(props) {
   return (
     <>
       <div className="headerItem">
-        <span className="menuItemText fontSizeVerySmall"> {props.name}</span>
+        <div className="menuItemText fontSizeVerySmall"> {props.name}</div>
       </div>
     </>
   );
