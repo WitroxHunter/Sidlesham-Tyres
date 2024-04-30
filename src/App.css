@@ -1,3 +1,9 @@
+main {
+  margin: auto;
+  width: 60%;
+  background-color: var(--UIbackground);
+}
+
 /*--------------------------TELEBIM--------------------------*/
 
 /*--------------------------TELEBIM--------------------------*/
@@ -145,13 +151,6 @@
   background: linear-gradient(180deg, #000000ff 0%, #00000000 100%);
 }
 
-
-main {
-  margin: auto;
-  width: 60%;
-  background-color: var(--UIbackground);
-}
-
 .section {
   width: 100%;
 }
@@ -225,6 +224,130 @@ main {
   width: 80%;
 }
 
+/*--------------------------SECTION--------------------------*/
+
+/*--------------------------SECTION--------------------------*/
+
+/*--------------------------SECTION--------------------------*/
+
+.sectionContent {
+  position: relative;
+  z-index: 20;
+}
+
+.sectionContent::before {
+  position: absolute;
+  content: "";
+
+  background: url("./assets/patterns/dots_pattern.svg");
+  background-size: 15%;
+  background-position: center;
+
+  opacity: 10%;
+  width: 100vw;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: -5;
+}
+
+/*--------------------------OUR OFFER--------------------------*/
+
+/*--------------------------OUR OFFER--------------------------*/
+
+/*--------------------------OUR OFFER--------------------------*/
+
+.sectionOurOffer .leftSide,
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.offerCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.offerCard .stylizedBox {
+  width: 90%;
+  margin-bottom: -30px;
+
+}
+
+.leftSide>div>.stylizedBox {
+  margin-left: auto;
+}
+
+.leftSide>div:nth-child(1n)>.stylizedBox,
+.rightSide>div:nth-child(1n)>.stylizedBox {
+  transform: skewX(10deg);
+}
+
+.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage::before,
+.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage::before {
+  transform: skewX(-10deg);
+}
+
+.leftSide>div:nth-child(2n)>.stylizedBox,
+.rightSide>div:nth-child(2n)>.stylizedBox {
+  transform: skewX(-10deg);
+}
+
+.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage::before,
+.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage::before {
+  transform: skewX(10deg);
+}
+
+.rightSide .offerCard .offerHyperlink {
+  margin-left: auto;
+}
+
+.offerImage {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.offerImage::before {
+  position: absolute;
+  content: "";
+  left: -10%;
+  width: 120%;
+  height: 100%;
+  background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.offerHyperlink {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  width: fit-content;
+  padding: 10px 15px;
+  font-size: var(--FontSmall);
+  font-weight: 600;
+
+  position: relative;
+
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
+
+  z-index: 20;
+}
+
 /*--------------------------GET A QUOTE--------------------------*/
 
 /*--------------------------GET A QUOTE--------------------------*/
@@ -242,7 +365,10 @@ main {
 }
 
 .formTopPart .leftSide,
-.rightSide {
+.formTopPart .rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
 }
 
@@ -259,6 +385,7 @@ main {
 
 .formInput input,
 textarea {
+  width: 100%;
   border-radius: 10px;
   font-size: var(--FontSmall);
   border: 2px solid #6d6d6d;

@@ -3,9 +3,12 @@ import Header from "./components/header";
 import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
+
 import SectionWhyUs from "./components/sectionWhyUs";
+import SectionOurOffer from "./components/sectionOurOffer";
 import SectionGetAQuote from "./components/sectionGetAQuote";
 import SectionReachUs from "./components/sectionReachUs";
+
 import Footer from "./components/footer";
 
 import "./App.css";
@@ -35,7 +38,9 @@ function App() {
 
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
-          <div className="sectionContent"></div>
+          <div className="sectionContent">
+            <SectionOurOffer />
+          </div>
         </div>
 
         {/* Customer Testimonials */}

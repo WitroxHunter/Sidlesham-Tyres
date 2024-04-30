@@ -34,6 +34,9 @@
   font-style: normal;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 .backgroundUIorange {
   background-color: #f18d37;
