@@ -191,6 +191,7 @@ button {
 .sectionTitle {
   color: var(--UIorange);
   font-size: var(--FontBig);
+  text-align: center;
   margin: 10px 0;
 }
 

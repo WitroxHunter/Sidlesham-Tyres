@@ -31,12 +31,17 @@
   margin: 11px 0;
 }
 
-.telebimButton1,
-.telebimButton2 {
+.telebimButtons {
+  display: flex;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.mainButton,
+.secondaryButton {
   height: 50px;
   font-size: var(--FontSmall);
   font-weight: 600;
-  margin-top: 25px;
   border-radius: 10px;
   color: black;
   overflow: hidden;
@@ -44,13 +49,13 @@
   position: relative;
 }
 
-.telebimButton1 {
+.mainButton {
   background-color: var(--UIorange);
   width: 220px;
   transition: all 0.25s;
 }
 
-.telebimButton1::before {
+.mainButton::before {
   content: "";
   position: absolute;
   left: 0;
@@ -65,22 +70,21 @@
   transform: scaleX(0);
 }
 
-.telebimButton1:hover::before {
+.mainButton:hover::before {
   transform: scaleX(1);
 }
 
-.telebimButton1:hover {
+.mainButton:hover {
   filter: drop-shadow(0 0 20px hsl(28, 87%, 48%, 0.2));
 }
 
-.telebimButton2 {
+.secondaryButton {
   background-color: white;
   width: 190px;
-  margin-left: 20px;
   transition: all 0.25s;
 }
 
-.telebimButton2::before {
+.secondaryButton::before {
   content: "";
   position: absolute;
   left: 0;
@@ -95,11 +99,11 @@
   transform: scaleX(0);
 }
 
-.telebimButton2:hover::before {
+.secondaryButton:hover::before {
   transform: scaleX(1);
 }
 
-.telebimButton2:hover {
+.secondaryButton:hover {
   filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.2));
 }
 
@@ -177,7 +181,7 @@ main {
   display: flex;
   gap: 10px;
   align-items: flex-start;
-  padding: 5px 15px 5px 5px;
+  padding: 5px 20px;
   margin-bottom: 20px;
 
   z-index: 20;
@@ -206,7 +210,11 @@ main {
   font-size: var(--FontMid);
 }
 
-.rightSide {
+.sectionWhyUs .leftSide {
+  width: 100%;
+}
+
+.sectionWhyUs .rightSide {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -216,6 +224,81 @@ main {
 .rightSide img {
   width: 80%;
 }
+
+/*--------------------------GET A QUOTE--------------------------*/
+
+/*--------------------------GET A QUOTE--------------------------*/
+
+/*--------------------------GET A QUOTE--------------------------*/
+
+.formContainer {
+  margin: auto;
+  width: 70%;
+}
+
+.formTopPart {
+  display: flex;
+  gap: 20px;
+}
+
+.formTopPart .leftSide,
+.rightSide {
+  width: 100%;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput label {
+  color: #909090;
+  font-size: var(--FontVerySmall);
+  font-weight: 500;
+}
+
+.formInput input,
+textarea {
+  border-radius: 10px;
+  font-size: var(--FontSmall);
+  border: 2px solid #6d6d6d;
+  padding: 5px 10px;
+  background: none;
+
+  transition: all 0.25s;
+}
+
+.formInput input:focus,
+textarea:focus {
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+.formInput textarea {
+  resize: none;
+  height: 200px;
+  width: 100%;
+}
+
+.formButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .secondaryButton {
+  cursor: pointer;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+
 
 /*--------------------------REACH US--------------------------*/
 
@@ -241,8 +324,7 @@ main {
   align-items: center;
 }
 
-.contentReachUs .leftSide,
-.rightSide {
+.stylizedBox {
   border-radius: 20px;
   border: 3px solid #1c1c1c;
   background: rgb(39, 39, 39);

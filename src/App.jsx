@@ -4,6 +4,7 @@ import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
 import SectionWhyUs from "./components/sectionWhyUs";
+import SectionGetAQuote from "./components/sectionGetAQuote";
 import SectionReachUs from "./components/sectionReachUs";
 import Footer from "./components/footer";
 
@@ -17,6 +18,9 @@ function App() {
       <ContactBar />
 
       <main>
+
+        {/* Why us? */}
+
         <div className="section sectionWhyUs">
           <SectionTitle
             title="Why us?"
@@ -26,10 +30,16 @@ function App() {
             <SectionWhyUs />
           </div>
         </div>
+
+        {/* Our Offer */}
+
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
           <div className="sectionContent"></div>
         </div>
+
+        {/* Customer Testimonials */}
+
         <div className="section sectionCustomerTestimonials">
           <SectionTitle
             title="Customer Testimonials"
@@ -37,13 +47,21 @@ function App() {
           />
           <div className="sectionContent"></div>
         </div>
+
+        {/* Get a quote */}
+
         <div className="section sectionGetAQuote">
           <SectionTitle
             title="Get a quote"
             subtitle="Let us know what you need"
           />
-          <div className="sectionContent"></div>
+          <div className="sectionContent">
+            <SectionGetAQuote />
+          </div>
         </div>
+
+        {/* Reach us */}
+
         <div className="section sectionReachUs">
           <SectionTitle
             title="Reach us"
@@ -53,7 +71,9 @@ function App() {
             <SectionReachUs />
           </div>
         </div>
+
       </main>
+
       <Footer />
     </>
   );

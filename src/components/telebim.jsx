@@ -12,8 +12,10 @@ export default function Telebim() {
               Unbeatable prices ensuring top-notch safety, performance, and
               customer satisfaction.
             </span>
-            <button className="telebimButton1">Call us now</button>
-            <button className="telebimButton2">Learn more</button>
+            <div className="telebimButtons">
+              <button className="mainButton">Call us now</button>
+              <button className="secondaryButton">Learn more</button>
+            </div>
           </div>
         </div>
 
