@@ -4,6 +4,54 @@ main {
   background-color: var(--UIbackground);
 }
 
+.tireMarks {
+  position: relative;
+  left: 0;
+  opacity: 0.1;
+  margin: 50px 0;
+}
+
+.smallTireMarks {
+  height: 40px;
+  background-image: url("./assets/patterns/tire_marks_pattern.png");
+  background-size: auto 100%;
+
+  opacity: 0.5;
+  transform: rotateZ(2deg);
+
+  animation: slide-right 60s linear;
+}
+
+.bigTireMarks {
+  height: 70px;
+  background-image: url("./assets/patterns/tire_marks_pattern.png");
+  background-size: auto 100%;
+
+  transform: rotateZ(-2deg);
+
+  animation: slide-left 60s linear;
+}
+
+@keyframes slide-right {
+  from {
+    background-position: 0%;
+  }
+
+  to {
+    background-position: 100%;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    background-position: 100%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
+
 /*--------------------------TELEBIM--------------------------*/
 
 /*--------------------------TELEBIM--------------------------*/

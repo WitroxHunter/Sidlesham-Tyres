@@ -11,6 +11,8 @@ import SectionReachUs from "./components/sectionReachUs";
 
 import Footer from "./components/footer";
 
+import TireMarks from "./components/splitterTireMarks";
+
 import "./App.css";
 
 function App() {
@@ -35,6 +37,7 @@ function App() {
         </div>
 
         {/* Our Offer */}
+        <TireMarks />
 
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
