@@ -274,9 +274,11 @@ main {
 }
 
 .offerCard .stylizedBox {
+  position: relative;
+  height: 150px;
   width: 90%;
   margin-bottom: -30px;
-
+  overflow: hidden;
 }
 
 .leftSide>div>.stylizedBox {
@@ -288,9 +290,9 @@ main {
   transform: skewX(10deg);
 }
 
-.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage::before,
-.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage::before {
-  transform: skewX(-10deg);
+.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
+  transform: translate(-50%, -50%) skewX(-10deg);
 }
 
 .leftSide>div:nth-child(2n)>.stylizedBox,
@@ -298,9 +300,9 @@ main {
   transform: skewX(-10deg);
 }
 
-.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage::before,
-.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage::before {
-  transform: skewX(10deg);
+.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
+  transform: translate(-50%, -50%) skewX(10deg);
 }
 
 .rightSide .offerCard .offerHyperlink {
@@ -308,20 +310,13 @@ main {
 }
 
 .offerImage {
-  position: relative;
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 20px;
-  z-index: 10;
-}
-
-.offerImage::before {
   position: absolute;
-  content: "";
-  left: -10%;
   width: 120%;
-  height: 100%;
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) skewX(-10deg);
+
   background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
   background-size: cover;
   background-position: center;
