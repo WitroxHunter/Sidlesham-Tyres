@@ -1,0 +1,26 @@
+#error-page {
+  width: auto;
+  height: auto;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15vh;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+p {
+  font-size: 2vw;
+}
+
+@media (max-width: 900px) {
+  p {
+    font-size: 5vw;
+  }
+  h1 {
+    font-size: 20vw;
+  }
+}

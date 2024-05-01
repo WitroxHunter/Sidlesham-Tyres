@@ -6,6 +6,7 @@ import ContactBar from "./components/contact-bar";
 
 import SectionWhyUs from "./components/sectionWhyUs";
 import SectionOurOffer from "./components/sectionOurOffer";
+import SectionTestimonials from "./components/sectionTestimonials";
 import SectionGetAQuote from "./components/sectionGetAQuote";
 import SectionReachUs from "./components/sectionReachUs";
 
@@ -23,7 +24,6 @@ function App() {
       <ContactBar />
 
       <main>
-
         {/* Why us? */}
 
         <div className="section sectionWhyUs">
@@ -53,7 +53,9 @@ function App() {
             title="Customer Testimonials"
             subtitle="What people say about us"
           />
-          <div className="sectionContent"></div>
+          <div className="sectionContent">
+            <SectionTestimonials />
+          </div>
         </div>
 
         {/* Get a quote */}
@@ -79,7 +81,6 @@ function App() {
             <SectionReachUs />
           </div>
         </div>
-
       </main>
 
       <Footer />
