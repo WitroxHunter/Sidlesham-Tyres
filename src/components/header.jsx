@@ -37,7 +37,7 @@ export default function Header() {
           <img src={logo} />
         </div>
         <div className="headerCenter">
-          <MenuItem name="Home" tp="/" />
+          <MenuItem name="Home" tp="/Sidlesham-Tyres/" />
           <MenuItem name="About us" tp="about" />
           <MenuItem name="Services" tp="services" />
           <MenuItem name="Tyre tech" tp="tyre-tech" />

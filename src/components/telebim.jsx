@@ -13,7 +13,9 @@ export default function Telebim() {
               customer satisfaction.
             </span>
             <div className="telebimButtons">
-              <button className="mainButton">Call us now</button>
+              <a href="tel:+48790557610">
+                <button className="mainButton">Call us now</button>
+              </a>
               <button className="secondaryButton">Learn more</button>
             </div>
           </div>
