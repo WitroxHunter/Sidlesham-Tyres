@@ -1,3 +1,10 @@
+import Header from "../components/header";
+
 export default function Services() {
-  return <div className="main">Services</div>;
+  return (
+    <>
+      <Header />
+      <div className="main">Services</div>
+    </>
+  );
 }

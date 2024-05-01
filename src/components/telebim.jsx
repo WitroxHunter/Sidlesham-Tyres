@@ -1,4 +1,5 @@
 import background from "../assets/Background.png";
+import { Link } from "react-router-dom";
 
 export default function Telebim() {
   return (
@@ -16,7 +17,9 @@ export default function Telebim() {
               <a href="tel:+48790557610">
                 <button className="mainButton">Call us now</button>
               </a>
-              <button className="secondaryButton">Learn more</button>
+              <Link to={"about"}>
+                <button className="secondaryButton">Learn more</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -7,7 +7,7 @@ function MenuItem(props) {
   return (
     <>
       <div className="headerItem">
-        <Link to={props.tp}>
+        <Link to={"/Sidlesham-Tyres/" + props.tp}>
           <div className="menuItemText fontSizeVerySmall"> {props.name}</div>
         </Link>
       </div>
@@ -37,7 +37,7 @@ export default function Header() {
           <img src={logo} />
         </div>
         <div className="headerCenter">
-          <MenuItem name="Home" tp="/Sidlesham-Tyres/" />
+          <MenuItem name="Home" tp="" />
           <MenuItem name="About us" tp="about" />
           <MenuItem name="Services" tp="services" />
           <MenuItem name="Tyre tech" tp="tyre-tech" />
