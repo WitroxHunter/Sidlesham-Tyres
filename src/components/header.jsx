@@ -34,7 +34,9 @@ export default function Header() {
     <>
       <div className={scrolled ? "scrolled header" : "header"}>
         <div className="headerLeft">
-          <img src={logo} />
+          <Link to={"/Sidlesham-Tyres/"}>
+            <img src={logo} />
+          </Link>
         </div>
         <div className="headerCenter">
           <MenuItem name="Home" tp="" />
