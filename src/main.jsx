@@ -18,22 +18,22 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/about/",
+    path: "/Sidlesham-Tyres/about/",
     element: <AboutUs />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/services/",
+    path: "/Sidlesham-Tyres/services/",
     element: <Services />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/tyre-tech/",
+    path: "/Sidlesham-Tyres/tyre-tech/",
     element: <TyreTech />,
     errorElement: <ErrorPage />,
   },
   {
-    path: "Sidlesham-Tyres/contact/",
+    path: "/Sidlesham-Tyres/contact/",
     element: <ContactUs />,
     errorElement: <ErrorPage />,
   },

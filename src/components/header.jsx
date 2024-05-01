@@ -1,12 +1,15 @@
 import hamburger from "../assets/icons/hamburger.svg";
 import logo from "../assets/logo.png";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function MenuItem(props) {
   return (
     <>
       <div className="headerItem">
-        <div className="menuItemText fontSizeVerySmall"> {props.name}</div>
+        <Link to={props.tp}>
+          <div className="menuItemText fontSizeVerySmall"> {props.name}</div>
+        </Link>
       </div>
     </>
   );
@@ -34,12 +37,12 @@ export default function Header() {
           <img src={logo} />
         </div>
         <div className="headerCenter">
-          <MenuItem name="Home" />
-          <MenuItem name="About us" />
-          <MenuItem name="Services" />
-          <MenuItem name="Tyre tech" />
-          {/* <MenuItem name="News" /> */}
-          <MenuItem name="Contact us" />
+          <MenuItem name="Home" tp="/" />
+          <MenuItem name="About us" tp="about" />
+          <MenuItem name="Services" tp="services" />
+          <MenuItem name="Tyre tech" tp="tyre-tech" />
+          {/* <MenuItem name="News" tp="blog"/> */}
+          <MenuItem name="Contact us" tp="contact" />
         </div>
         <div className="headerRight">
           <img className="header-hamburger" src={hamburger} />
