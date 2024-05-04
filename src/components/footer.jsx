@@ -60,8 +60,8 @@ export default function Footer() {
               <WorkingHours day="Wed" hours="8:30 - 5:00" />
               <WorkingHours day="Thu" hours="8:30 - 5:00" />
               <WorkingHours day="Fri" hours="8:30 - 5:00" />
-              <WorkingHours day="Sat" hours="CLOSED" />
-              <WorkingHours day="Sun" hours="CLOSED" />
+              <WorkingHours day="Sat, Sun" hours="CLOSED" />
+              <WorkingHours day="Holidays" hours="CLOSED" />
             </div>
           </div>
         </div>

@@ -556,13 +556,14 @@ form {
 }
 
 .testimonial {
+  position: relative;
   flex: 1;
-  height: auto;
-  padding: 0 0 2% 0;
+  padding: 2% 2%;
+  height: 100%;
 }
 
 .testimonial-name {
-  height: 15%;
+  height: 10%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -572,14 +573,14 @@ form {
 
 .quote {
   position: absolute;
-  top: 5%;
-  left: 2%;
-  width: 3%;
+  width: 10%;
   height: auto;
+  top: 3%;
+  left: 3%;
 }
 
 .testimonial-stars-bar {
-  margin: 0 auto;
+  margin: 1% auto;
   padding: 0 20%;
   width: auto;
   display: flex;
@@ -588,7 +589,6 @@ form {
 }
 
 .star {
-  margin-top: -10px;
   width: 20%;
 }
 
@@ -598,18 +598,36 @@ form {
 }
 
 .testimonial-content {
-  padding: 0 5%;
   font-size: var(--FontSmall);
   line-height: normal;
 }
 
 .testimonial-source {
   font-size: var(--FontVerySmall);
-  padding: 2px 5%;
-  height: 10%;
 }
 
 .testimonial-source,
 .testimonial-name {
   color: rgb(148, 148, 148);
+}
+
+.testimonial-source span {
+  text-decoration: underline;
+}
+
+.testimonial-source span:hover {
+  color: rgb(122, 122, 122);
+  transition: 0.12s;
+  cursor: pointer;
+}
+
+.testimonial1 {
+  margin-top: 3%;
+}
+
+.testimonial2 {
+}
+
+.testimonial3 {
+  margin-top: 5%;
 }
