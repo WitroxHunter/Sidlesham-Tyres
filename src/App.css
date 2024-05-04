@@ -537,3 +537,81 @@ form {
   height: 20px;
   filter: invert(1);
 }
+
+/*--------------------------TESTIMONIALS--------------------------*/
+
+/*--------------------------TESTIMONIALS--------------------------*/
+
+/*--------------------------TESTIMONIALS--------------------------*/
+
+.testimonials-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+
+.testimonial {
+  flex: 1;
+  height: auto;
+  padding: 0 0 2% 0;
+}
+
+.testimonial-name {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--FontSmall);
+}
+
+.quote {
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 3%;
+  height: auto;
+}
+
+.testimonial-stars-bar {
+  margin: 0 auto;
+  padding: 0 20%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  height: 10%;
+}
+
+.star {
+  margin-top: -10px;
+  width: 20%;
+}
+
+.testimonial-content {
+  height: auto;
+  text-align: justify;
+}
+
+.testimonial-content {
+  padding: 0 5%;
+  font-size: var(--FontSmall);
+  line-height: normal;
+}
+
+.testimonial-source {
+  font-size: var(--FontVerySmall);
+  padding: 2px 5%;
+  height: 10%;
+}
+
+.testimonial-source,
+.testimonial-name {
+  color: rgb(148, 148, 148);
+}
+
+/* TYMCZASOWA LINIJKA ZEBY WYGLADALO DOBRZE NA RAZIE */
+
+.sectionCustomerTestimonials {
+  margin: 100px 0;
+}
