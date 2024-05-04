@@ -544,6 +544,10 @@ form {
 
 /*--------------------------TESTIMONIALS--------------------------*/
 
+.sectionCustomerTestimonials {
+  margin: 100px 0; /* TYMCZASOWA LINIJKA ZEBY WYGLADALO DOBRZE NA RAZIE */
+}
+
 .testimonials-box {
   display: flex;
   flex-direction: row;
@@ -608,10 +612,4 @@ form {
 .testimonial-source,
 .testimonial-name {
   color: rgb(148, 148, 148);
-}
-
-/* TYMCZASOWA LINIJKA ZEBY WYGLADALO DOBRZE NA RAZIE */
-
-.sectionCustomerTestimonials {
-  margin: 100px 0;
 }
