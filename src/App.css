@@ -161,6 +161,11 @@ main {
   filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.2));
 }
 
+.mainButton:active,
+.secondaryButton:active {
+  transform: scale(0.95);
+}
+
 /*--------------------------CONTACT BAR--------------------------*/
 
 /*--------------------------CONTACT BAR--------------------------*/
@@ -564,8 +569,10 @@ form {
 }
 
 .testimonial-name {
+  position: relative;
   text-align: center;
   font-size: var(--FontSmall);
+  z-index: 15;
 }
 
 .quote {
@@ -574,6 +581,7 @@ form {
   height: auto;
   top: 3%;
   left: 3%;
+  z-index: 10;
 }
 
 .testimonial-stars-bar {
