@@ -262,7 +262,6 @@ main {
 
 .whyUsFeature h2 {
   margin-right: 10px;
-  display: inline;
   color: white;
   font-size: var(--FontMid);
 }
@@ -381,24 +380,53 @@ main {
 }
 
 .offerHyperlink {
+  user-select: none;
+  position: relative;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
+  overflow: hidden;
 
   width: fit-content;
   padding: 10px 15px;
   font-size: var(--FontSmall);
   font-weight: 600;
 
-  position: relative;
-
   border-radius: 10px;
   border: 3px solid #1c1c1c;
   background: rgb(39, 39, 39);
   background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
 
+  transition: 0.2s;
   z-index: 20;
+}
+
+.offerHyperlink span {
+  position: relative;
+  z-index: 10;
+}
+
+.offerHyperlink::before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  z-index: 2;
+  transition: 0.25s;
+}
+
+
+
+.offerHyperlink:hover::before {
+  width: 100%;
+}
+
+.offerHyperlink:active {
+  transform: scale(0.95);
 }
 
 /*--------------------------GET A QUOTE--------------------------*/
@@ -527,6 +555,7 @@ form {
 }
 
 .reachUsContactIconBack {
+  position: relative;
   height: 30px;
   width: 30px;
   background-color: var(--IconsBackground);
@@ -535,6 +564,9 @@ form {
   align-items: center;
   justify-content: center;
   display: inline-flex;
+
+  transition: 0.2s;
+  z-index: 10;
 }
 
 .reachUsContactIcon {
