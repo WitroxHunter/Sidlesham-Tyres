@@ -191,8 +191,7 @@ main {
 
 .contact-info-icon {
   width: 36px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
-    brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
 }
 
 .contactTopDarkening {
@@ -335,27 +334,27 @@ main {
   overflow: hidden;
 }
 
-.leftSide > div > .stylizedBox {
+.leftSide>div>.stylizedBox {
   margin-left: auto;
 }
 
-.leftSide > div:nth-child(1n) > .stylizedBox,
-.rightSide > div:nth-child(1n) > .stylizedBox {
+.leftSide>div:nth-child(1n)>.stylizedBox,
+.rightSide>div:nth-child(1n)>.stylizedBox {
   transform: skewX(10deg);
 }
 
-.leftSide > div:nth-child(1n) > .stylizedBox > .offerImage,
-.rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
+.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
   transform: translate(-50%, -50%) skewX(-10deg);
 }
 
-.leftSide > div:nth-child(2n) > .stylizedBox,
-.rightSide > div:nth-child(2n) > .stylizedBox {
+.leftSide>div:nth-child(2n)>.stylizedBox,
+.rightSide>div:nth-child(2n)>.stylizedBox {
   transform: skewX(-10deg);
 }
 
-.leftSide > div:nth-child(2n) > .stylizedBox > .offerImage,
-.rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
+.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
   transform: translate(-50%, -50%) skewX(10deg);
 }
 
@@ -545,10 +544,12 @@ form {
 /*--------------------------TESTIMONIALS--------------------------*/
 
 .sectionCustomerTestimonials {
-  margin: 100px 0; /* TYMCZASOWA LINIJKA ZEBY WYGLADALO DOBRZE NA RAZIE */
+  margin: 100px 0;
+  /* TYMCZASOWA LINIJKA ZEBY WYGLADALO DOBRZE NA RAZIE */
 }
 
 .testimonials-box {
+  align-items: center;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -563,11 +564,7 @@ form {
 }
 
 .testimonial-name {
-  height: 10%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   font-size: var(--FontSmall);
 }
 
@@ -619,15 +616,4 @@ form {
   color: rgb(122, 122, 122);
   transition: 0.12s;
   cursor: pointer;
-}
-
-.testimonial1 {
-  margin-top: 3%;
-}
-
-.testimonial2 {
-}
-
-.testimonial3 {
-  margin-top: 5%;
 }
