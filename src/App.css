@@ -93,7 +93,6 @@ main {
 
 .mainButton,
 .secondaryButton {
-  height: 50px;
   font-size: var(--FontSmall);
   font-weight: 600;
   border-radius: 10px;
@@ -101,6 +100,11 @@ main {
   overflow: hidden;
   z-index: 0;
   position: relative;
+}
+
+.secondaryButton>span {
+  position: relative;
+  z-index: 20;
 }
 
 .mainButton {
@@ -134,7 +138,7 @@ main {
 
 .secondaryButton {
   background-color: white;
-  width: 190px;
+  padding: 0 30px;
   transition: all 0.25s;
 }
 
@@ -147,10 +151,11 @@ main {
   height: 100%;
   background: hsl(0, 0%, 90%);
   border-radius: inherit;
-  z-index: -1;
   transition: transform 0.25s;
   transform-origin: 0 0;
   transform: scaleX(0);
+
+  z-index: 10;
 }
 
 .secondaryButton:hover::before {
@@ -489,14 +494,44 @@ textarea:focus {
 }
 
 .formButtonDiv {
+  position: relative;
+  width: fit-content;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 0 30px;
+  transition: all 0.25s;
 }
 
-form .secondaryButton {
+.formButton {
   cursor: pointer;
   border: none;
+  font-size: var(--FontSmall);
+  font-weight: 600;
+  color: black;
+}
+
+.formButtonDiv::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: hsl(0, 0%, 90%);
+  border-radius: inherit;
+  transition: transform 0.25s;
+  transform-origin: 0 0;
+  transform: scaleX(0);
+
+  z-index: 10;
+}
+
+.formButtonDiv:hover::before {
+  transform: scaleX(1);
 }
 
 form {
@@ -618,15 +653,13 @@ form {
 
 .testimonial-stars-bar {
   margin: 1% auto;
-  padding: 0 20%;
-  width: auto;
+  width: 66%;
   display: flex;
   flex-direction: row;
-  height: 10%;
 }
 
 .star {
-  width: 20%;
+  width: 100%;
 }
 
 .testimonial-content {

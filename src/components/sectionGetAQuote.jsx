@@ -34,13 +34,13 @@ export default function SectionGetAQuote(props) {
             <textarea name="serviceNeeded"></textarea>
           </div>
 
-          <div className="formButtonDiv">
+          <button className="formButtonDiv">
             <input
-              className="secondaryButton"
+              className="formButton"
               type="submit"
               value={"Send report"}
             ></input>
-          </div>
+          </button>
         </form>
       </div>
     </>

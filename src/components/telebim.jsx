@@ -15,10 +15,10 @@ export default function Telebim() {
             </span>
             <div className="telebimButtons">
               <a href="tel:+48790557610">
-                <button className="mainButton">Call us now</button>
+                <button className="mainButton"><span>Call us now</span></button>
               </a>
               <Link to={"about"}>
-                <button className="secondaryButton">Learn more</button>
+                <button className="secondaryButton"><span>Learn more</span></button>
               </Link>
             </div>
           </div>
