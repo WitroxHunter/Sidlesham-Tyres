@@ -16,6 +16,7 @@
   --FontVerySmall: 16px;
   --FontSmall: 20px;
   --FontMid: 24px;
+  --FontBiggerMid: 32px;
   --FontBig: 48px;
 
   font-synthesis: none;
@@ -76,6 +77,10 @@ body {
 
 .fontSizeMid {
   font-size: 24px;
+}
+
+.fontSizeBiggerMid {
+  font-size: 32px;
 }
 
 h2 {
@@ -229,10 +234,10 @@ button {
   width: fit-content;
   text-align: center;
   text-wrap: nowrap;
-  background-color: var(--UIlightgrey);
   padding: 3px 10px;
   border-radius: 5px;
   margin: 0 20px;
+  background-color: var(--UIlightgrey);
 }
 
 .sectionLine {
@@ -278,7 +283,8 @@ button {
   width: 100%;
 }
 
-.footer-content-left {}
+.footer-content-left {
+}
 
 .footer-content-middle {
   padding-top: 50px;
@@ -342,11 +348,35 @@ button {
 
 .footer-content-icon {
   height: 20px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
+    brightness(103%) contrast(115%);
 }
 
 .footer-bottom {
   text-align: center;
   padding: 10px;
   font-size: 13px;
+}
+
+.pages-telebim {
+  margin: 0 50px;
+  padding: 13% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pages-telebim-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 26%;
+  margin: 0 0 0 -40%;
+}
+
+.pages-telebim-box span {
+  line-height: normal;
 }

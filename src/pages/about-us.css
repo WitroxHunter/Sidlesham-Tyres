@@ -1,0 +1,19 @@
+.about-us-background {
+  background-image: url("../assets/images/about-us-telebim-bg.png");
+}
+
+.main {
+  width: 60%;
+  margin: auto;
+}
+
+.section-line-text {
+  font-size: var(--FontBiggerMid);
+  font-weight: 600;
+  width: fit-content;
+  text-align: center;
+  text-wrap: nowrap;
+  padding: 3px 0px;
+  border-radius: 5px;
+  margin: 0 20px;
+}

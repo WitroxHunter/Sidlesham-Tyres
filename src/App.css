@@ -1,7 +1,6 @@
-main {
+.main-center {
   margin: auto;
   width: 60%;
-  background-color: var(--UIbackground);
 }
 
 .tireMarks {
@@ -19,7 +18,7 @@ main {
   opacity: 0.5;
   transform: rotateZ(2deg);
 
-  animation: slide-right 60s linear;
+  animation: slide-right 120s linear infinite;
 }
 
 .bigTireMarks {
@@ -29,7 +28,7 @@ main {
 
   transform: rotateZ(-2deg);
 
-  animation: slide-left 60s linear;
+  animation: slide-left 120s linear infinite;
 }
 
 @keyframes slide-right {
@@ -96,20 +95,22 @@ main {
   font-size: var(--FontSmall);
   font-weight: 600;
   border-radius: 10px;
+  padding: 15px 30px;
   color: black;
   overflow: hidden;
   z-index: 0;
   position: relative;
 }
 
-.secondaryButton>span {
+.secondaryButton > span {
   position: relative;
   z-index: 20;
 }
 
 .mainButton {
   background-color: var(--UIorange);
-  width: 220px;
+  padding-left: 40px;
+  padding-right: 40px;
   transition: all 0.25s;
 }
 
@@ -138,7 +139,6 @@ main {
 
 .secondaryButton {
   background-color: white;
-  padding: 0 30px;
   transition: all 0.25s;
 }
 
@@ -201,7 +201,8 @@ main {
 
 .contact-info-icon {
   width: 36px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
+    brightness(103%) contrast(115%);
 }
 
 .contactTopDarkening {
@@ -216,6 +217,7 @@ main {
 
 .section {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .sectionContent {
@@ -321,6 +323,30 @@ main {
 
 /*--------------------------OUR OFFER--------------------------*/
 
+.wheel-balancing-background {
+  background-image: url("./assets/images/Screenshot_yk_subaru_sedan_sti_ks_vallelunga_5-4-124-22-10-9.jpg");
+}
+
+.puncture-repairs-background {
+  background-image: url("./assets/images/Screenshot_gd_porsche_911_turbo_3_0_ks_nordschleife_5-4-124-21-11-25.jpg");
+}
+
+.tyre-replacements-background {
+  background-image: url("./assets/images/Screenshot_a3dr_ferrari_512tr_ks_brands_hatch_4-4-124-18-24-52.jpg");
+}
+
+.tube-replacements-background {
+  background-image: url("./assets/images/Screenshot_a3dr_ferrari_512tr_ks_brands_hatch_4-4-124-18-24-52.jpg");
+}
+
+.pressure-check-background {
+  background-image: url("./assets/images/Screenshot_yk_subaru_sedan_sti_ks_vallelunga_5-4-124-22-10-9.jpg");
+}
+
+.tyre-check-background {
+  background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
+}
+
 .sectionOurOffer .leftSide,
 .rightSide {
   display: flex;
@@ -343,27 +369,27 @@ main {
   overflow: hidden;
 }
 
-.leftSide>div>.stylizedBox {
+.leftSide > div > .stylizedBox {
   margin-left: auto;
 }
 
-.leftSide>div:nth-child(1n)>.stylizedBox,
-.rightSide>div:nth-child(1n)>.stylizedBox {
+.leftSide > div:nth-child(1n) > .stylizedBox,
+.rightSide > div:nth-child(1n) > .stylizedBox {
   transform: skewX(10deg);
 }
 
-.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage,
-.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
+.leftSide > div:nth-child(1n) > .stylizedBox > .offerImage,
+.rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
   transform: translate(-50%, -50%) skewX(-10deg);
 }
 
-.leftSide>div:nth-child(2n)>.stylizedBox,
-.rightSide>div:nth-child(2n)>.stylizedBox {
+.leftSide > div:nth-child(2n) > .stylizedBox,
+.rightSide > div:nth-child(2n) > .stylizedBox {
   transform: skewX(-10deg);
 }
 
-.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage,
-.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
+.leftSide > div:nth-child(2n) > .stylizedBox > .offerImage,
+.rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
   transform: translate(-50%, -50%) skewX(10deg);
 }
 
@@ -379,7 +405,7 @@ main {
   top: 50%;
   transform: translate(-50%, -50%) skewX(-10deg);
 
-  background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
+  /* background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -423,8 +449,6 @@ main {
   z-index: 2;
   transition: 0.25s;
 }
-
-
 
 .offerHyperlink:hover::before {
   width: 100%;
@@ -502,13 +526,21 @@ textarea:focus {
   justify-content: center;
   overflow: hidden;
   border-radius: 10px;
-  padding: 0 30px;
+  padding: 10px 30px;
+  background-color: #fff;
   transition: all 0.25s;
+}
+
+.formButtonDiv div {
+  display: block;
+  position: relative;
+  z-index: 15;
 }
 
 .formButton {
   cursor: pointer;
   border: none;
+  background: none;
   font-size: var(--FontSmall);
   font-weight: 600;
   color: black;
@@ -527,11 +559,15 @@ textarea:focus {
   transform-origin: 0 0;
   transform: scaleX(0);
 
-  z-index: 10;
+  z-index: 5;
 }
 
 .formButtonDiv:hover::before {
   transform: scaleX(1);
+}
+
+.formButtonDiv:hover {
+  filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.2));
 }
 
 form {
@@ -653,13 +689,16 @@ form {
 
 .testimonial-stars-bar {
   margin: 1% auto;
-  width: 66%;
+  gap: 5px;
+  height: 40px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
 .star {
-  width: 100%;
+  height: 100%;
 }
 
 .testimonial-content {

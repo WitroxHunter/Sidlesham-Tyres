@@ -6,7 +6,7 @@ const OfferCard = (props) => {
     <>
       <div className="offerCard">
         <div className="stylizedBox">
-          <div className="offerImage"></div>
+          <div className={`offerImage ${props.photo}`}></div>
         </div>
 
         <div className="offerHyperlink">
@@ -24,15 +24,30 @@ export default function SectionOurOffer() {
   return (
     <>
       <div className="leftSide">
-        <OfferCard offerText="Tyre replacements" />
-        <OfferCard offerText="Tyre replacements" />
-        <OfferCard offerText="Tyre replacements" />
+        <OfferCard
+          offerText="Wheel balancing"
+          photo="wheel-balancing-background"
+        />
+        <OfferCard
+          offerText="Puncture repairs"
+          photo="puncture-repairs-background"
+        />
+        <OfferCard
+          offerText="Tyre replacements"
+          photo="tyre-replacements-background"
+        />
       </div>
 
       <div className="rightSide">
-        <OfferCard offerText="Tyre replacements" />
-        <OfferCard offerText="Tyre replacements" />
-        <OfferCard offerText="Tyre replacements" />
+        <OfferCard
+          offerText="Tube replacements"
+          photo="tube-replacements-background"
+        />
+        <OfferCard
+          offerText="Pressure check"
+          photo="pressure-check-background"
+        />
+        <OfferCard offerText="Tyre check" photo="tyre-check-background" />
       </div>
     </>
   );
