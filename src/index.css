@@ -142,11 +142,13 @@ button {
 }
 
 .headerLeft {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: left;
   padding-left: 10px;
   height: 100%;
+  z-index: 500;
 }
 
 .headerCenter {

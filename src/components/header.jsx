@@ -11,6 +11,7 @@ const StyledHamburger = styled.img`
 `;
 
 const StyledHamburgerDiv = styled.div`
+  position: fixed;
   opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
   transform: translateY(${({ isOpen }) => (isOpen ? "0px" : "-300px")});
   transition: 0.5s ease; /* Dodajemy transition */
@@ -55,36 +56,36 @@ export default function Header() {
   };
 
   return (
-    <div className={scrolled ? "scrolled header" : "header"}>
-      <div className="headerLeft">
-        <Link to={"/Sidlesham-Tyres/"}>
-          <img src={logo} alt="Logo" />
-        </Link>
+    <>
+      <div className={scrolled ? "scrolled header" : "header"}>
+        <div className="headerLeft">
+          <Link to={"/Sidlesham-Tyres/"}>
+            <img src={logo} alt="Logo" />
+          </Link>
+        </div>
+        <div className="headerCenter">
+          <MenuItem name="Home" tp="" />
+          <MenuItem name="About us" tp="about" />
+          <MenuItem name="Services" tp="services" />
+          <MenuItem name="Tyre tech" tp="tyre-tech" />
+          <MenuItem name="Contact us" tp="contact" />
+        </div>
+        <div className="headerRight">
+          <StyledHamburger
+            src={hamburger}
+            alt="Hamburger"
+            className="header-hamburger"
+            onClick={handleHamburgerClick}
+          />
+        </div>
       </div>
-      <div className="headerCenter">
-        <MenuItem name="Home" tp="" />
-        <MenuItem name="About us" tp="about" />
-        <MenuItem name="Services" tp="services" />
-        <MenuItem name="Tyre tech" tp="tyre-tech" />
-        <MenuItem name="Contact us" tp="contact" />
-      </div>
-      <div className="headerRight">
-        {/* Używamy stylizowanego komponentu hamburgera */}
-        <StyledHamburger
-          src={hamburger}
-          alt="Hamburger"
-          className="header-hamburger"
-          onClick={handleHamburgerClick}
-        />
-        {/* Wyświetlamy menu hamburgera, jeśli jest otwarty */}
-        <StyledHamburgerDiv isOpen={isOpen} className="hamburger-div">
-          <HamburgerChild name="Home" link="" />
-          <HamburgerChild name="About us" link="about" />
-          <HamburgerChild name="Services" link="services" />
-          <HamburgerChild name="Tyre tech" link="tyre-tech" />
-          <HamburgerChild name="Contact us" link="contact" />
-        </StyledHamburgerDiv>
-      </div>
-    </div>
+      <StyledHamburgerDiv isOpen={isOpen} className="hamburger-div">
+        <HamburgerChild name="Home" link="" />
+        <HamburgerChild name="About us" link="about" />
+        <HamburgerChild name="Services" link="services" />
+        <HamburgerChild name="Tyre tech" link="tyre-tech" />
+        <HamburgerChild name="Contact us" link="contact" />
+      </StyledHamburgerDiv>
+    </>
   );
 }
