@@ -126,6 +126,7 @@ button {
   height: 50px;
   display: flex;
   position: fixed;
+  justify-content: space-between;
   top: 0;
   margin: 0;
   user-select: none;
@@ -145,7 +146,6 @@ button {
   align-items: center;
   justify-content: left;
   padding-left: 10px;
-  width: 25%;
   height: 100%;
 }
 
@@ -157,11 +157,10 @@ button {
 }
 
 .headerRight {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: right;
   padding-right: 10px;
-  width: 20%;
   height: 100%;
 }
 
@@ -283,8 +282,7 @@ button {
   width: 100%;
 }
 
-.footer-content-left {
-}
+.footer-content-left {}
 
 .footer-content-middle {
   padding-top: 50px;
@@ -348,8 +346,7 @@ button {
 
 .footer-content-icon {
   height: 20px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
-    brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
 }
 
 .footer-bottom {

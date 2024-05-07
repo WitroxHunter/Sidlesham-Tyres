@@ -1,7 +1,6 @@
 .main-center {
   margin: auto;
   width: 60%;
-  transition: all 0.5s;
 }
 
 .tireMarks {
@@ -745,13 +744,43 @@ form {
 /* -----RESPONSIVNES----- */
 
 @media (max-width: 1340px) {
+  #root {
+    overflow: hidden;
+  }
+
   .main-center {
     width: 100%;
     padding: 0 10px;
   }
 
+  .header {
+    justify-content: space-between;
+  }
+
+  .headerCenter {
+    display: none !important;
+  }
+
+  .headerRight {
+    display: flex !important;
+  }
+
+  .telebimTextBox {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .telebimTextBox h1 {
+    text-align: center;
+  }
+
   .telebimTextBox .text {
     width: 100%;
+    text-align: justify;
+  }
+
+  .telebimTextBox .telebimButtons {
+    justify-content: center;
   }
 
   .contact-bar {
@@ -761,6 +790,11 @@ form {
 
   .sectionContent {
     flex-direction: column;
+  }
+
+  .whyUsFeature {
+    width: 95%;
+    margin: 20px auto;
   }
 
   .testimonials-box {
