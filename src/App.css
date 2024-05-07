@@ -806,6 +806,14 @@ form {
     margin: 20px auto;
   }
 
+  .sectionOurOffer .sectionContent .leftSide .offerCard .offerHyperlink {
+    margin-left: auto;
+  }
+
+  .sectionOurOffer .sectionContent .leftSide .offerCard .stylizedBox {
+    margin-left: 0;
+  }
+
   .testimonials-box {
     flex-direction: column;
   }
