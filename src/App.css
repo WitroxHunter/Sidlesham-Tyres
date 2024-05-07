@@ -814,6 +814,22 @@ form {
     margin-left: 0;
   }
 
+  .rightSide>div:nth-child(1n)>.stylizedBox {
+    transform: skewX(-10deg);
+  }
+
+  .rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
+    transform: translate(-50%, -50%) skewX(10deg);
+  }
+
+  .rightSide>div:nth-child(2n)>.stylizedBox {
+    transform: skewX(10deg);
+  }
+
+  .rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
+    transform: translate(-50%, -50%) skewX(-10deg);
+  }
+
   .testimonials-box {
     flex-direction: column;
   }
