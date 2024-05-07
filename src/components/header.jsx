@@ -3,6 +3,16 @@ import logo from "../assets/logo.png";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+function HamburgerChild(props) {
+  return (
+    <>
+      <Link to={"/Sidlesham-Tyres/" + props.link}>
+        <div className="hamburger-div-button">{props.name}</div>
+      </Link>
+    </>
+  );
+}
+
 function MenuItem(props) {
   return (
     <>
@@ -16,6 +26,7 @@ function MenuItem(props) {
 }
 
 export default function Header() {
+  const [hamburgerClicked, setHamburgerClicked] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,6 +40,10 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleHamburgerClick = () => {
+    setHamburgerClicked(!hamburgerClicked);
+  };
 
   return (
     <>
@@ -47,7 +62,20 @@ export default function Header() {
           <MenuItem name="Contact us" tp="contact" />
         </div>
         <div className="headerRight">
-          <img className="header-hamburger" src={hamburger} />
+          <img
+            className="header-hamburger"
+            src={hamburger}
+            onClick={handleHamburgerClick}
+          />
+          {hamburgerClicked && (
+            <div className="hamburger-div">
+              <HamburgerChild name="Home" link="" />
+              <HamburgerChild name="About us" link="about" />
+              <HamburgerChild name="Services" link="services" />
+              <HamburgerChild name="Tyre tech" link="tyre-tech" />
+              <HamburgerChild name="Contact us" link="contact" />
+            </div>
+          )}
         </div>
       </div>
     </>
