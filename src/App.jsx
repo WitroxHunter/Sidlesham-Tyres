@@ -23,7 +23,7 @@ function App() {
       <Telebim />
       <ContactBar />
 
-      <main>
+      <div className="main-center">
         {/* Why us? */}
 
         <div className="section sectionWhyUs">
@@ -35,10 +35,13 @@ function App() {
             <SectionWhyUs />
           </div>
         </div>
+      </div>
 
-        {/* Our Offer */}
-        <TireMarks />
+      <TireMarks />
 
+      {/* Our Offer */}
+
+      <div className="main-center">
         <div className="section sectionOurOffer">
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
           <div className="sectionContent">
@@ -57,9 +60,12 @@ function App() {
             <SectionTestimonials />
           </div>
         </div>
+      </div>
 
-        {/* Get a quote */}
+      <TireMarks />
 
+      {/* Get a quote */}
+      <div className="main-center">
         <div className="section sectionGetAQuote">
           <SectionTitle
             title="Get a quote"
@@ -81,7 +87,7 @@ function App() {
             <SectionReachUs />
           </div>
         </div>
-      </main>
+      </div >
 
       <Footer />
     </>

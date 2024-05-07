@@ -35,11 +35,13 @@ export default function SectionGetAQuote(props) {
           </div>
 
           <button className="formButtonDiv">
-            <input
-              className="formButton"
-              type="submit"
-              value={"Send report"}
-            ></input>
+            <span>
+              <input
+                className="formButton"
+                type="submit"
+                value={"Send report"}
+              ></input>
+            </span>
           </button>
         </form>
       </div>

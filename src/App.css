@@ -1,7 +1,6 @@
-main {
+.main-center {
   margin: auto;
   width: 60%;
-  background-color: var(--UIbackground);
 }
 
 .tireMarks {
@@ -19,7 +18,7 @@ main {
   opacity: 0.5;
   transform: rotateZ(2deg);
 
-  animation: slide-right 60s linear;
+  animation: slide-right 120s linear infinite;
 }
 
 .bigTireMarks {
@@ -29,7 +28,7 @@ main {
 
   transform: rotateZ(-2deg);
 
-  animation: slide-left 60s linear;
+  animation: slide-left 120s linear infinite;
 }
 
 @keyframes slide-right {
@@ -96,6 +95,7 @@ main {
   font-size: var(--FontSmall);
   font-weight: 600;
   border-radius: 10px;
+  padding: 15px 30px;
   color: black;
   overflow: hidden;
   z-index: 0;
@@ -109,7 +109,8 @@ main {
 
 .mainButton {
   background-color: var(--UIorange);
-  width: 220px;
+  padding-left: 40px;
+  padding-right: 40px;
   transition: all 0.25s;
 }
 
@@ -138,7 +139,6 @@ main {
 
 .secondaryButton {
   background-color: white;
-  padding: 0 30px;
   transition: all 0.25s;
 }
 
@@ -216,6 +216,7 @@ main {
 
 .section {
   width: 100%;
+  margin-bottom: 100px;
 }
 
 .sectionContent {
@@ -506,6 +507,11 @@ textarea:focus {
   transition: all 0.25s;
 }
 
+.formButtonDiv .span {
+  position: relative;
+  z-index: 15;
+}
+
 .formButton {
   cursor: pointer;
   border: none;
@@ -527,7 +533,7 @@ textarea:focus {
   transform-origin: 0 0;
   transform: scaleX(0);
 
-  z-index: 10;
+  z-index: 5;
 }
 
 .formButtonDiv:hover::before {
@@ -653,13 +659,16 @@ form {
 
 .testimonial-stars-bar {
   margin: 1% auto;
-  width: 66%;
+  gap: 5px;
+  height: 40px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
 .star {
-  width: 100%;
+  height: 100%;
 }
 
 .testimonial-content {
