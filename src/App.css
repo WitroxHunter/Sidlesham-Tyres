@@ -60,6 +60,7 @@
 .telebim {
   height: 100svh;
   width: 100%;
+  background-color: #0000;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -785,6 +786,10 @@ form {
 
   .telebimTextBox .telebimButtons {
     justify-content: center;
+  }
+
+  .contactTopDarkening {
+    background: linear-gradient(180deg, #0008 0%, #000f 100%);
   }
 
   .contact-bar {
