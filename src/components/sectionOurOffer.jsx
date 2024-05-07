@@ -47,7 +47,10 @@ export default function SectionOurOffer() {
           offerText="Pressure check"
           photo="pressure-check-background"
         />
-        <OfferCard offerText="Tyre check" photo="tyre-check-background" />
+        <OfferCard
+          offerText="Tyre check"
+          photo="tyre-check-background"
+        />
       </div>
     </>
   );
