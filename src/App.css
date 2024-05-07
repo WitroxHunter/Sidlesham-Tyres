@@ -58,7 +58,7 @@
 /*--------------------------TELEBIM--------------------------*/
 
 .telebim {
-  height: 100lvh;
+  height: 100svh;
   width: 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -763,6 +763,10 @@ form {
 
   .headerRight {
     display: flex !important;
+  }
+
+  .telebim {
+    background-color: #0008;
   }
 
   .telebimTextBox {
