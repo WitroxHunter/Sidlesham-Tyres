@@ -175,6 +175,8 @@ button {
 
 .header-hamburger {
   cursor: pointer;
+  position: relative;
+  z-index: 500;
 }
 
 .menuItemText {

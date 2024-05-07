@@ -3,13 +3,15 @@ import PagesTelebim from "../components/pages-telebim";
 import "./about-us.css";
 
 function Subline(props) {
-  <>
-    <div className="sectionSubLine">
-      <div className="sectionLine"></div>
-      <div className="section-line-text">{props.title}</div>
-      <div className="sectionLine"></div>
-    </div>
-  </>;
+  return (
+    <>
+      <div className="sectionSubLine">
+        <div className="sectionLine"></div>
+        <div className="section-line-text">{props.title}</div>
+        <div className="sectionLine"></div>
+      </div>
+    </>
+  );
 }
 
 export default function AboutUs() {
@@ -23,8 +25,9 @@ export default function AboutUs() {
       />
 
       <div className="main">
-        <Subline title="Our mission" />
-        sdfs
+        <Subline title="Our story" />
+        <Subline title="Our story" />
+        <Subline title="Our story" />
       </div>
     </>
   );
