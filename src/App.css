@@ -322,6 +322,30 @@
 
 /*--------------------------OUR OFFER--------------------------*/
 
+.wheel-balancing-background {
+  background-image: url("./assets/images/Screenshot_yk_subaru_sedan_sti_ks_vallelunga_5-4-124-22-10-9.jpg");
+}
+
+.puncture-repairs-background {
+  background-image: url("./assets/images/Screenshot_gd_porsche_911_turbo_3_0_ks_nordschleife_5-4-124-21-11-25.jpg");
+}
+
+.tyre-replacements-background {
+  background-image: url("./assets/images/Screenshot_a3dr_ferrari_512tr_ks_brands_hatch_4-4-124-18-24-52.jpg");
+}
+
+.tube-replacements-background {
+  background-image: url("./assets/images/Screenshot_a3dr_ferrari_512tr_ks_brands_hatch_4-4-124-18-24-52.jpg");
+}
+
+.pressure-check-background {
+  background-image: url("./assets/images/Screenshot_yk_subaru_sedan_sti_ks_vallelunga_5-4-124-22-10-9.jpg");
+}
+
+.tyre-check-background {
+  background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
+}
+
 .sectionOurOffer .leftSide,
 .rightSide {
   display: flex;
@@ -380,7 +404,7 @@
   top: 50%;
   transform: translate(-50%, -50%) skewX(-10deg);
 
-  background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg");
+  /* background-image: url("./assets/images/Screenshot_180sx_mission_2_drift_10-3-124-21-40-48.jpg"); */
   background-size: cover;
   background-position: center;
 }
@@ -424,8 +448,6 @@
   z-index: 2;
   transition: 0.25s;
 }
-
-
 
 .offerHyperlink:hover::before {
   width: 100%;
@@ -503,11 +525,13 @@ textarea:focus {
   justify-content: center;
   overflow: hidden;
   border-radius: 10px;
-  padding: 0 30px;
+  padding: 10px 30px;
+  background-color: #fff;
   transition: all 0.25s;
 }
 
-.formButtonDiv .span {
+.formButtonDiv div {
+  display: block;
   position: relative;
   z-index: 15;
 }
@@ -515,6 +539,7 @@ textarea:focus {
 .formButton {
   cursor: pointer;
   border: none;
+  background: none;
   font-size: var(--FontSmall);
   font-weight: 600;
   color: black;
@@ -538,6 +563,10 @@ textarea:focus {
 
 .formButtonDiv:hover::before {
   transform: scaleX(1);
+}
+
+.formButtonDiv:hover {
+  filter: drop-shadow(0 0 20px hsla(0, 0%, 100%, 0.2));
 }
 
 form {
