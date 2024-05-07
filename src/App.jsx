@@ -58,6 +58,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionTestimonials />
+            <div className="section-content-background dots-pattern"></div>
           </div>
         </div>
       </div>
