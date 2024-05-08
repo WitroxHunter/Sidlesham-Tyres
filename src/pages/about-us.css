@@ -37,6 +37,7 @@
 
 .article-text {
   width: 100%;
+  text-align: justify;
 }
 
 .article-photo-box {
