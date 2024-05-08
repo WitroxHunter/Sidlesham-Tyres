@@ -175,6 +175,10 @@
   transform: scale(0.95);
 }
 
+.center-justify {
+  text-align: center !important;
+}
+
 /*--------------------------CONTACT BAR--------------------------*/
 
 /*--------------------------CONTACT BAR--------------------------*/
@@ -857,5 +861,15 @@ form {
     align-items: center;
     width: 100%;
     padding: 30px;
+  }
+
+  .mainButton,
+  .secondaryButton {
+    width: 100%;
+  }
+
+  .telebimButtons {
+    display: flex;
+    flex-direction: column;
   }
 }
