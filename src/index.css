@@ -349,7 +349,8 @@ button {
 }
 
 .footer-content-label {
-  display: block;
+  display: flex;
+
   margin-top: 3px;
   font-size: var(--FontSmall);
 }
@@ -374,7 +375,7 @@ button {
 
 .footer-content-icon {
   height: 20px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
+  filter: invert(100%);
 }
 
 .footer-bottom {
@@ -472,5 +473,16 @@ button {
 
   .pages-telebim-background::before {
     background-size: 50%;
+  }
+
+  .footer-content-title {
+    text-align: center;
+  }
+
+  .footer-content-label {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px 0;
   }
 }

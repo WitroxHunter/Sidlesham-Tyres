@@ -25,31 +25,29 @@ export default function Footer() {
           <div className="footer-section">
             <div className="footer-content-middle">
               <span className="footer-content-title">Contact info:</span>
-              <span className="footer-content-label">
+              <div className="footer-content-label">
                 <div className="footer-content-icon-background">
                   <img src={call} className="footer-content-icon" />
                 </div>
                 +44 01243 641986
-              </span>
-              <span className="footer-content-label">
+              </div>
+              <div className="footer-content-label">
                 <div className="footer-content-icon-background">
                   <img src={mail} className="footer-content-icon" />
                 </div>
                 enquiries@sidleshamtyres.co.uk
-              </span>
-              <span className="footer-content-label">
+              </div>
+              <div className="footer-content-label">
                 <div className="footer-content-icon-background">
                   <img src={location} className="footer-content-icon" />
                 </div>
                 Sidlesham Tyres,
-                <span className="location-additional-margin">
-                  <br /> Jury Lane,
-                  <br /> Sidlesham Common,
-                  <br /> Chichester,
-                  <br /> West Sussex
-                  <br /> PO20 7PX.
-                </span>
-              </span>
+                <br /> Jury Lane,
+                <br /> Sidlesham Common,
+                <br /> Chichester,
+                <br /> West Sussex
+                <br /> PO20 7PX.
+              </div>
             </div>
           </div>
           <div className="footer-section">
