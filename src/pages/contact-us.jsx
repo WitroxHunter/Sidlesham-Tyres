@@ -9,6 +9,7 @@ export default function ContactUs() {
   return (
     <>
       <Header />
+
       <div className="main-center">
         <div className="title-box">
           <SectionTitle
@@ -17,7 +18,11 @@ export default function ContactUs() {
           />
         </div>
 
-        <Contact />
+
+        <div className="article-section">
+          <Contact />
+          <div className="article-section-background dots-pattern"></div>
+        </div>
 
         <div className="title-box">
           <SectionTitle
@@ -26,7 +31,10 @@ export default function ContactUs() {
           />
         </div>
 
-        <ReachUs />
+        <div className="article-section">
+          <ReachUs />
+          <div className="article-section-background dots-pattern"></div>
+        </div>
       </div>
       <Footer />
     </>
