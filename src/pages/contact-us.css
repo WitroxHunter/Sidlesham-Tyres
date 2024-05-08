@@ -1,3 +1,13 @@
 .title-box {
   margin: 30px 0;
 }
+
+.main-center {
+  margin-top: 100px;
+}
+
+@media (max-width: 1340px) {
+  .main-center {
+    margin-top: 50px;
+  }
+}
