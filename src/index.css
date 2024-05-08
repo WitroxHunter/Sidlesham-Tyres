@@ -408,6 +408,10 @@ button {
   width: 65%;
 }
 
+.pages-telebim-box .fontSizeMid {
+  width: 50%;
+}
+
 .pages-telebim-box span {
   line-height: normal;
 }
@@ -419,5 +423,14 @@ button {
 
   .pages-telebim {
     backdrop-filter: grayscale(1) brightness(0.75);
+  }
+
+  .pages-telebim-box {
+    align-items: center;
+  }
+
+  .pages-telebim-box .fontSizeMid {
+    text-align: center;
+    width: 100%;
   }
 }
