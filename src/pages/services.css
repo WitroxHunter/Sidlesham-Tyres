@@ -1,0 +1,114 @@
+.services-background {
+    background-image: url("../assets/images/Screenshot_gd_porsche_911_turbo_3_0_ks_nordschleife_5-4-124-21-11-25.jpg");
+}
+
+.sectionLine {
+    margin: 20px 0;
+}
+
+.service-card {
+    position: relative;
+    padding: 20px 40px;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.service-card-title {
+    font-size: var(--FontBiggerMid);
+    font-weight: 600;
+    text-wrap: nowrap;
+}
+
+.service-card-title,
+.service-card-text {
+    position: relative;
+    z-index: 20;
+    filter: drop-shadow(0 0 10px #000) drop-shadow(0 0 5px #000);
+}
+
+.service-card .right {
+    margin-left: auto;
+    text-align: right;
+}
+
+.service-card-text {
+    width: 70%;
+}
+
+.service-card-photo-box {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    transform: skewX(10deg);
+    z-index: 10;
+}
+
+.service-card-photo-box.right {
+    transform: skewX(-10deg);
+}
+
+.service-card-photo {
+    position: absolute;
+    width: 120%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-50%) skewX(-10deg);
+    z-index: 5;
+}
+
+.service-card-photo.right {
+    transform: translateX(-50%) skewX(10deg);
+}
+
+.service-card-photo-darkening {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 50%) 100%);
+
+    z-index: 10;
+}
+
+.service-card-photo-darkening.right {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 100%) 0%, rgba(0, 0, 0, 50%) 100%);
+}
+
+@media (max-width: 1340px) {
+
+    .service-card-title,
+    .service-card-title.right {
+        text-align: center;
+    }
+
+    .service-card-text,
+    .service-card-text.right {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card-photo-box,
+    .service-card-photo-box.right {
+        transform: skewX(0deg);
+    }
+
+    .service-card-photo,
+    .service-card-photo.right {
+        transform: translateX(-50%) skewX(0deg);
+    }
+}

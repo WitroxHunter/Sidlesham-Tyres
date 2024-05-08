@@ -49,30 +49,40 @@ export default function AboutUs() {
 
       <div className="main-center">
         <Subline title="Our mission" />
-        <TextBox
-          direction="forward"
-          photo={image1}
-          text="At Sidlesham Tyres, our mission is simple: to provide expert fitting and good prices in a fresh and clean environment. We believe in honesty and integrity, which is why we follow the philosophy of only selling you what you need."
-        />
+        <div className="article-section">
+          <TextBox
+            direction="forward"
+            photo={image1}
+            text="At Sidlesham Tyres, our mission is simple: to provide expert fitting and good prices in a fresh and clean environment. We believe in honesty and integrity, which is why we follow the philosophy of only selling you what you need."
+          />
+          <div className="article-section-background dots-pattern"></div>
+        </div>
 
         <Subline title="Our story" />
-        <TextBox
-          direction="reverse"
-          photo={image2}
-          text="Established in April 2015, Sidlesham Tyres was born out of a desire to offer superior service and value to our customers. After years of experience working for another local tyre fitting firm, our founder decided it was time to strike out on their own. With a background in tyre fitting since 1999, our commitment to quality and customer satisfaction has remained unwavering."
-        />
-        <TextBox
-          direction="forward"
-          photo={image3}
-          text="Established in April 2015, Sidlesham Tyres was born out of a desire to offer superior service and value to our customers. After years of experience working for another local tyre fitting firm, our founder decided it was time to strike out on their own. With a background in tyre fitting since 1999, our commitment to quality and customer satisfaction has remained unwavering."
-        />
+        <div className="article-section">
+          <TextBox
+            direction="reverse"
+            photo={image2}
+            text="Established in April 2015, Sidlesham Tyres was born out of a desire to offer superior service and value to our customers. After years of experience working for another local tyre fitting firm, our founder decided it was time to strike out on their own. With a background in tyre fitting since 1999, our commitment to quality and customer satisfaction has remained unwavering."
+          />
+          <TextBox
+            direction="forward"
+            photo={image3}
+            text="Established in April 2015, Sidlesham Tyres was born out of a desire to offer superior service and value to our customers. After years of experience working for another local tyre fitting firm, our founder decided it was time to strike out on their own. With a background in tyre fitting since 1999, our commitment to quality and customer satisfaction has remained unwavering."
+          />
+          <div className="article-section-background connected-dots-pattern"></div>
+        </div>
+
 
         <Subline title="Our services" />
-        <TextBox
-          direction="reverse"
-          photo={image4}
-          text="Sidlesham Tyres is your one-stop shop for all your tyre needs. We supply tyres for cars, vans, 4x4s, trailers, caravans, and motor-homes, ranging from budget options to top brands like Michelin. But that's not all—we also stock mower tyres, wheelbarrow tyres, and mobility scooter tyres. If your tyres hold air, chances are we can supply them at bargain prices."
-        />
+        <div className="article-section">
+          <TextBox
+            direction="reverse"
+            photo={image4}
+            text="Sidlesham Tyres is your one-stop shop for all your tyre needs. We supply tyres for cars, vans, 4x4s, trailers, caravans, and motor-homes, ranging from budget options to top brands like Michelin. But that's not all—we also stock mower tyres, wheelbarrow tyres, and mobility scooter tyres. If your tyres hold air, chances are we can supply them at bargain prices."
+          />
+          <div className="article-section-background dots-pattern"></div>
+        </div>
       </div>
       <Footer />
     </>

@@ -33,6 +33,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionWhyUs />
+            <div className="section-content-background connected-dots-pattern"></div>
           </div>
         </div>
       </div>
@@ -46,6 +47,7 @@ function App() {
           <SectionTitle title="Our offer" subtitle="Find your perfect need" />
           <div className="sectionContent">
             <SectionOurOffer />
+            <div className="section-content-background dots-pattern"></div>
           </div>
         </div>
 
@@ -58,7 +60,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionTestimonials />
-            <div className="section-content-background dots-pattern"></div>
+            <div className="section-content-background crosses-pattern"></div>
           </div>
         </div>
       </div>
@@ -74,6 +76,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionGetAQuote />
+            <div className="section-content-background dots-pattern"></div>
           </div>
         </div>
 
@@ -86,6 +89,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionReachUs />
+            <div className="section-content-background dots-pattern"></div>
           </div>
         </div>
       </div >

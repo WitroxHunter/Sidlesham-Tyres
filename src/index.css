@@ -203,7 +203,7 @@ button {
 }
 
 .hamburger-div {
-  z-index: 30;
+  z-index: 400;
   top: 49px;
   left: 0;
   position: absolute;
@@ -384,20 +384,37 @@ button {
 }
 
 .pages-telebim {
+  position: relative;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
+  backdrop-filter: grayscale(1) brightness(0.4);
+  z-index: 50;
+}
 
-  backdrop-filter: grayscale(1);
+.pages-telebim-background::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 10%;
+  background-image: url("./assets/patterns/crosses_pattern.svg");
+  background-size: 10%;
+  z-index: -10;
 }
 
 .pages-telebim-background {
-  overflow: hidden;
+  position: relative;
   margin: 100px 50px;
   height: 55svh;
   background-size: cover;
   background-position: center;
+  z-index: 30;
 }
 
 .pages-telebim-box {
@@ -407,6 +424,28 @@ button {
   align-items: flex-start;
   width: 65%;
   filter: drop-shadow(0 0px 10px #000) drop-shadow(0 0px 5px #000);
+}
+
+.pages-telebim-box h1 {
+  text-align: center;
+}
+
+.article-section {
+  position: relative;
+  z-index: 20;
+}
+
+.article-section-background {
+  position: absolute;
+  content: "";
+  background-position: center;
+  opacity: 10%;
+  width: 100vw;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -5;
 }
 
 .pages-telebim-box .fontSizeMid {
@@ -422,10 +461,6 @@ button {
     margin: 50px 10px;
   }
 
-  .pages-telebim {
-    backdrop-filter: grayscale(1) brightness(0.75);
-  }
-
   .pages-telebim-box {
     align-items: center;
   }
@@ -433,5 +468,9 @@ button {
   .pages-telebim-box .fontSizeMid {
     text-align: center;
     width: 100%;
+  }
+
+  .pages-telebim-background::before {
+    background-size: 50%;
   }
 }
