@@ -70,7 +70,7 @@ export default function AboutUs() {
             photo={image3}
             text="Established in April 2015, Sidlesham Tyres was born out of a desire to offer superior service and value to our customers. After years of experience working for another local tyre fitting firm, our founder decided it was time to strike out on their own. With a background in tyre fitting since 1999, our commitment to quality and customer satisfaction has remained unwavering."
           />
-          <div className="article-section-background connected-dots-pattern"></div>
+          <div className="article-section-background crosses-pattern"></div>
         </div>
 
 

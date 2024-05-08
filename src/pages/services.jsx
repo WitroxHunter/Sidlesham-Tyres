@@ -10,6 +10,8 @@ function Subline(props) {
     <>
       <div className="sectionSubLine">
         <div className="sectionLine"></div>
+        <div className="section-line-text">{props.title}</div>
+        <div className="sectionLine"></div>
       </div>
     </>
   );
@@ -64,66 +66,64 @@ export default function Services() {
           <div className="article-section-background dots-pattern"></div>
         </div>
 
-        <Subline />
+        <Subline title="Tube replacements" />
 
         <div className="article-section">
           <ServiceCard
             position="left"
             photo="tube-replacements-background"
-            title="Tube replacements"
+            title=""
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
-          <div className="article-section-background dots-pattern"></div>
+          <div className="article-section-background crosses-pattern"></div>
         </div>
 
-
-        <Subline />
-
+        <Subline title="Puncture repairs" />
 
         <div className="article-section">
           <ServiceCard
             position="right"
             photo="puncture-repairs-background"
-            title="Puncture repairs"
+            title=""
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
-          <div className="article-section-background dots-pattern"></div>
+          <div className="article-section-background connected-dots-pattern"></div>
         </div>
 
-        <Subline />
+        <Subline title="Pressure check" />
 
         <div className="article-section">
           <ServiceCard
             position="left"
             photo="pressure-check-background"
-            title="Pressure check"
+            title=""
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
-          <div className="article-section-background dots-pattern"></div>
+          <div className="article-section-background crosses-pattern"></div>
         </div>
 
-        <Subline />
+        <Subline title="Tyre replacements" />
 
         <div className="article-section">
           <ServiceCard
             position="right"
             photo="tyre-replacements-background"
-            title="Tyre replacements"
+            title=""
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
           <div className="article-section-background dots-pattern"></div>
         </div>
 
-        <Subline />
+        <Subline title="Tyre check" />
 
         <div className="article-section">
           <ServiceCard
             position="left"
             photo="tyre-check-background"
-            title="Tyre check"
+            title=""
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
-          <div className="article-section-background dots-pattern"></div>
+          <div className="article-section-background crosses-pattern"></div>
         </div>
       </div>
 
