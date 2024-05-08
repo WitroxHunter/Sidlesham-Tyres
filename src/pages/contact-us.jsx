@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <>
       <Header />
-      <div className="main">
+      <div className="main-center">
         <div className="title-box">
           <SectionTitle
             title="Get a quote"

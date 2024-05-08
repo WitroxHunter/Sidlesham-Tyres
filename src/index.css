@@ -178,7 +178,7 @@ button {
 .header-hamburger {
   cursor: pointer;
   position: relative;
-  z-index: 500;
+  z-index: 1123;
 }
 
 .menuItemText {
@@ -203,6 +203,7 @@ button {
 }
 
 .hamburger-div {
+  z-index: 30;
   top: 49px;
   left: 0;
   position: absolute;

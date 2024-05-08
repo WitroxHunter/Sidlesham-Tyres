@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import PagesTelebim from "../components/pages-telebim";
+import Footer from "../components/footer";
 import "./about-us.css";
 
 function Subline(props) {
@@ -24,11 +25,12 @@ export default function AboutUs() {
         background="about-us-background"
       />
 
-      <div className="main">
+      <div className="main-center">
         <Subline title="Our story" />
         <Subline title="Our story" />
         <Subline title="Our story" />
       </div>
+      <Footer />
     </>
   );
 }

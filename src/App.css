@@ -1,6 +1,7 @@
 .main-center {
   margin: auto;
   width: 60%;
+  z-index: 1;
 }
 
 .tireMarks {
@@ -105,7 +106,7 @@
   position: relative;
 }
 
-.secondaryButton>span {
+.secondaryButton > span {
   position: relative;
   z-index: 20;
 }
@@ -204,7 +205,8 @@
 
 .contact-info-icon {
   width: 36px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
+    brightness(103%) contrast(115%);
 }
 
 .contactTopDarkening {
@@ -328,7 +330,6 @@
   background-size: 15%;
 }
 
-
 /*--------------------------OUR OFFER--------------------------*/
 
 /*--------------------------OUR OFFER--------------------------*/
@@ -381,27 +382,27 @@
   overflow: hidden;
 }
 
-.leftSide>div>.stylizedBox {
+.leftSide > div > .stylizedBox {
   margin-left: auto;
 }
 
-.leftSide>div:nth-child(1n)>.stylizedBox,
-.rightSide>div:nth-child(1n)>.stylizedBox {
+.leftSide > div:nth-child(1n) > .stylizedBox,
+.rightSide > div:nth-child(1n) > .stylizedBox {
   transform: skewX(10deg);
 }
 
-.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage,
-.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
+.leftSide > div:nth-child(1n) > .stylizedBox > .offerImage,
+.rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
   transform: translate(-50%, -50%) skewX(-10deg);
 }
 
-.leftSide>div:nth-child(2n)>.stylizedBox,
-.rightSide>div:nth-child(2n)>.stylizedBox {
+.leftSide > div:nth-child(2n) > .stylizedBox,
+.rightSide > div:nth-child(2n) > .stylizedBox {
   transform: skewX(-10deg);
 }
 
-.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage,
-.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
+.leftSide > div:nth-child(2n) > .stylizedBox > .offerImage,
+.rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
   transform: translate(-50%, -50%) skewX(10deg);
 }
 
@@ -814,19 +815,19 @@ form {
     margin-left: 0;
   }
 
-  .rightSide>div:nth-child(1n)>.stylizedBox {
+  .rightSide > div:nth-child(1n) > .stylizedBox {
     transform: skewX(-10deg);
   }
 
-  .rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
+  .rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
     transform: translate(-50%, -50%) skewX(10deg);
   }
 
-  .rightSide>div:nth-child(2n)>.stylizedBox {
+  .rightSide > div:nth-child(2n) > .stylizedBox {
     transform: skewX(10deg);
   }
 
-  .rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
+  .rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
     transform: translate(-50%, -50%) skewX(-10deg);
   }
 
