@@ -1,5 +1,5 @@
 .about-us-background {
-  background-image: url("../assets/images/about-us-telebim-bg.png");
+  background-image: url("../assets/images/Screenshot_fly_iku_subaru_22b_ek_tsukuba_fruits_line_8-4-124-1-37-24.jpg");
 }
 
 .main {
@@ -16,4 +16,50 @@
   padding: 3px 0px;
   border-radius: 5px;
   margin: 0 20px;
+}
+
+.fontSizeMid {
+  width: 50%;
+}
+
+.article-flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.article-flex-forward {
+  flex-direction: row;
+}
+
+.article-flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.article-text {
+  width: 100%;
+}
+
+.article-photo-box {
+  width: 100%;
+  height: fit-content;
+}
+
+.article-photo {
+  width: 100%;
+}
+
+
+@media (max-width: 1340px) {
+  .fontSizeMid {
+    width: 100%;
+  }
+
+  .article-flex-forward,
+  .article-flex-reverse {
+    flex-direction: column;
+  }
 }

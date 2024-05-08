@@ -106,7 +106,7 @@
   position: relative;
 }
 
-.secondaryButton > span {
+.secondaryButton>span {
   position: relative;
   z-index: 20;
 }
@@ -209,8 +209,7 @@
 
 .contact-info-icon {
   width: 36px;
-  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg)
-    brightness(103%) contrast(115%);
+  filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(299deg) brightness(103%) contrast(115%);
 }
 
 .contactTopDarkening {
@@ -386,27 +385,27 @@
   overflow: hidden;
 }
 
-.leftSide > div > .stylizedBox {
+.leftSide>div>.stylizedBox {
   margin-left: auto;
 }
 
-.leftSide > div:nth-child(1n) > .stylizedBox,
-.rightSide > div:nth-child(1n) > .stylizedBox {
+.leftSide>div:nth-child(1n)>.stylizedBox,
+.rightSide>div:nth-child(1n)>.stylizedBox {
   transform: skewX(10deg);
 }
 
-.leftSide > div:nth-child(1n) > .stylizedBox > .offerImage,
-.rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
+.leftSide>div:nth-child(1n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
   transform: translate(-50%, -50%) skewX(-10deg);
 }
 
-.leftSide > div:nth-child(2n) > .stylizedBox,
-.rightSide > div:nth-child(2n) > .stylizedBox {
+.leftSide>div:nth-child(2n)>.stylizedBox,
+.rightSide>div:nth-child(2n)>.stylizedBox {
   transform: skewX(-10deg);
 }
 
-.leftSide > div:nth-child(2n) > .stylizedBox > .offerImage,
-.rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
+.leftSide>div:nth-child(2n)>.stylizedBox>.offerImage,
+.rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
   transform: translate(-50%, -50%) skewX(10deg);
 }
 
@@ -618,12 +617,17 @@ form {
   align-items: center;
 }
 
-.stylizedBox {
+.stylizedBox,
+.stylizedBoxNoBG {
+  overflow: hidden;
   border-radius: 20px;
   border: 3px solid #1c1c1c;
+  box-shadow: 0 3px 0 orange;
+}
+
+.stylizedBox {
   background: rgb(39, 39, 39);
   background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
-  box-shadow: 0 3px 0 orange;
 }
 
 .contentReachUs .rightSide {
@@ -819,19 +823,19 @@ form {
     margin-left: 0;
   }
 
-  .rightSide > div:nth-child(1n) > .stylizedBox {
+  .rightSide>div:nth-child(1n)>.stylizedBox {
     transform: skewX(-10deg);
   }
 
-  .rightSide > div:nth-child(1n) > .stylizedBox > .offerImage {
+  .rightSide>div:nth-child(1n)>.stylizedBox>.offerImage {
     transform: translate(-50%, -50%) skewX(10deg);
   }
 
-  .rightSide > div:nth-child(2n) > .stylizedBox {
+  .rightSide>div:nth-child(2n)>.stylizedBox {
     transform: skewX(10deg);
   }
 
-  .rightSide > div:nth-child(2n) > .stylizedBox > .offerImage {
+  .rightSide>div:nth-child(2n)>.stylizedBox>.offerImage {
     transform: translate(-50%, -50%) skewX(-10deg);
   }
 
