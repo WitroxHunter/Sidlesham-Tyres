@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import BackToTop from "../components/backToTop";
 import Footer from "../components/footer";
 import Contact from "../components/sectionGetAQuote";
 import ReachUs from "../components/sectionReachUs"
@@ -9,6 +10,7 @@ export default function ContactUs() {
   return (
     <>
       <Header />
+      <BackToTop />
 
       <div className="main-center">
         <div className="title-box">

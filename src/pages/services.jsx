@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import BackToTop from "../components/backToTop";
 import PagesTelebim from "../components/pages-telebim";
 import TireMarks from "../components/splitterTireMarks";
 import Footer from "../components/footer";
@@ -41,6 +42,7 @@ export default function Services() {
   return (
     <>
       <Header />
+      <BackToTop />
       <PagesTelebim
         sectionName="Services"
         text="Top company in the area specializing in tire changes and other automotive services."

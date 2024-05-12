@@ -226,6 +226,37 @@ button {
   font-size: var(--FontSmall);
 }
 
+/*--------------------------BACK TO TOP--------------------------*/
+
+/*--------------------------BACK TO TOP--------------------------*/
+
+/*--------------------------BACK TO TOP--------------------------*/
+
+.back-to-top-box {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  padding: 20px;
+
+  background-color: #333;
+  border-radius: 10px;
+
+  transition: 0.2s;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.scrolled {
+  opacity: 1;
+}
+
 /*--------------------------SECTION--------------------------*/
 
 /*--------------------------SECTION--------------------------*/
@@ -459,6 +490,7 @@ button {
 
 @media (max-width: 1340px) {
   .pages-telebim-background {
+    height: 90svh;
     margin: 50px 10px;
   }
 

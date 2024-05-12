@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./components/header";
+import BackToTop from "./components/backToTop";
 import Telebim from "./components/telebim";
 import SectionTitle from "./components/sectionTitle";
 import ContactBar from "./components/contact-bar";
@@ -21,6 +22,7 @@ function App() {
     <>
       <Header />
       <Telebim />
+      <BackToTop />
       <ContactBar />
 
       <div className="main-center">
@@ -33,7 +35,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionWhyUs />
-            <div className="section-content-background connected-dots-pattern"></div>
+            <div className="section-content-background crosses-pattern"></div>
           </div>
         </div>
       </div>
@@ -89,7 +91,7 @@ function App() {
           />
           <div className="sectionContent">
             <SectionReachUs />
-            <div className="section-content-background dots-pattern"></div>
+            <div className="section-content-background crosses-pattern"></div>
           </div>
         </div>
       </div >
