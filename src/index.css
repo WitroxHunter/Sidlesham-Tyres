@@ -253,6 +253,10 @@ button {
   z-index: 9999;
 }
 
+.back-to-top-box:hover {
+  background-color: #222;
+}
+
 .scrolled {
   opacity: 1;
 }
