@@ -87,6 +87,42 @@
 
 @media (max-width: 1340px) {
 
+    .main-center {
+        padding: 30px;
+    }
+
+    /* .service-card-title,
+    .service-card-title.right {
+        text-align: center;
+    }
+
+    .service-card-text,
+    .service-card-text.right {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .service-card-photo-box,
+    .service-card-photo-box.right {
+        transform: skewX(0deg);
+    }
+
+    .service-card-photo,
+    .service-card-photo.right {
+        transform: translateX(-50%) skewX(0deg);
+    } */
+}
+
+@media (max-width: 768px) {
+
+    .main-center {
+        padding: 10px;
+    }
+
     .service-card-title,
     .service-card-title.right {
         text-align: center;

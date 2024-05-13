@@ -11,3 +11,9 @@
     margin-top: 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .main-center {
+    margin-top: 50px;
+  }
+}

@@ -341,7 +341,6 @@ button {
 .footer-content-left,
 .footer-content-middle,
 .footer-content-right {
-  height: 100%;
   width: 100%;
 }
 
@@ -447,7 +446,7 @@ button {
 .pages-telebim-background {
   position: relative;
   margin: 100px 50px;
-  height: 55svh;
+  height: 70svh;
   background-size: cover;
   background-position: center;
   z-index: 30;
@@ -493,6 +492,37 @@ button {
 }
 
 @media (max-width: 1340px) {
+  .pages-telebim-background {
+    height: 80svh;
+    margin: 50px 10px;
+  }
+
+  .pages-telebim-box {
+    align-items: center;
+  }
+
+  .pages-telebim-box .fontSizeMid {
+    text-align: center;
+    width: 100%;
+  }
+
+  .pages-telebim-background::before {
+    background-size: 25%;
+  }
+
+  .footer-content-title {
+    text-align: center;
+  }
+
+  .footer-content-label {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
   .pages-telebim-background {
     height: 90svh;
     margin: 50px 10px;

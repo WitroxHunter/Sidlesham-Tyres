@@ -49,8 +49,7 @@
   width: 100%;
 }
 
-
-@media (max-width: 1340px) {
+@media (max-width: 768px) {
 
   .article-flex-forward,
   .article-flex-reverse {
