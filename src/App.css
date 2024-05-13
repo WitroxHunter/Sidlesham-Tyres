@@ -962,6 +962,11 @@ form {
     flex-direction: column;
   }
 
+  .testimonial-content {
+    font-size: var(--FontVerySmall);
+    line-height: 1.4rem;
+  }
+
   .formContainer {
     width: 100%;
   }
