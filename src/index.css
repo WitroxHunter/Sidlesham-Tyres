@@ -459,7 +459,7 @@ button {
 }
 
 .pages-telebim-box h1 {
-  text-align: center;
+  text-align: left;
 }
 
 .article-section {
@@ -492,6 +492,10 @@ button {
   .pages-telebim-background {
     height: 80svh;
     margin: 50px 10px;
+  }
+
+  .pages-telebim-box h1 {
+    text-align: center;
   }
 
   .pages-telebim-box {

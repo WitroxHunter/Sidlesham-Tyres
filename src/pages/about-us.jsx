@@ -9,14 +9,18 @@ import image3 from "../assets/images/Screenshot_a3dr_ferrari_512tr_ks_brands_hat
 import image4 from "../assets/images/Screenshot_yk_subaru_sedan_sti_ks_vallelunga_5-4-124-22-10-9.jpg";
 import "./about-us.css";
 
+import AnimatedComponent from "../components/Reveal";
+
 function Subline(props) {
   return (
     <>
-      <div className="sectionSubLine">
-        <div className="sectionLine"></div>
-        <div className="section-line-text">{props.title}</div>
-        <div className="sectionLine"></div>
-      </div>
+      <AnimatedComponent>
+        <div className="sectionSubLine">
+          <div className="sectionLine"></div>
+          <div className="section-line-text">{props.title}</div>
+          <div className="sectionLine"></div>
+        </div>
+      </AnimatedComponent>
     </>
   );
 }
@@ -24,14 +28,16 @@ function Subline(props) {
 const TextBox = (props) => {
   return (
     <>
-      <div className={`article-flex-box article-flex-${props.direction}`}>
-        <div className="article-text">
-          {props.text}
+      <AnimatedComponent>
+        <div className={`article-flex-box article-flex-${props.direction}`}>
+          <div className="article-text">
+            {props.text}
+          </div>
+          <div className="article-photo-box">
+            <img src={props.photo} className="article-photo stylizedBoxNoBG" />
+          </div>
         </div>
-        <div className="article-photo-box">
-          <img src={props.photo} className="article-photo stylizedBoxNoBG" />
-        </div>
-      </div>
+      </AnimatedComponent>
     </>
   )
 }

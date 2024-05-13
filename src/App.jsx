@@ -11,6 +11,8 @@ import SectionTestimonials from "./components/sectionTestimonials";
 import SectionGetAQuote from "./components/sectionGetAQuote";
 import SectionReachUs from "./components/sectionReachUs";
 
+import AnimatedComponent from "./components/Reveal";
+
 import Footer from "./components/footer";
 
 import TireMarks from "./components/splitterTireMarks";
@@ -27,57 +29,79 @@ function App() {
 
       <div className="main-center">
         {/* Why us? */}
+        <AnimatedComponent>
+          <div className="section sectionWhyUs">
+            <SectionTitle
+              title="Why us?"
+              subtitle="Because you can count on us!"
+            />
 
-        <div className="section sectionWhyUs">
-          <SectionTitle
-            title="Why us?"
-            subtitle="Because you can count on us!"
-          />
-          <div className="sectionContent">
-            <SectionWhyUs />
-            <div className="section-content-background crosses-pattern"></div>
+            <div className="sectionContent">
+              <SectionWhyUs />
+              <div className="section-content-background crosses-pattern"></div>
+            </div>
           </div>
-        </div>
+        </AnimatedComponent>
       </div>
 
-      <TireMarks />
+      <AnimatedComponent>
+        <TireMarks />
+      </AnimatedComponent>
 
       {/* Our Offer */}
 
       <div className="main-center">
-        <div className="section sectionOurOffer">
-          <SectionTitle title="Our offer" subtitle="Find your perfect need" />
-          <div className="sectionContent">
-            <SectionOurOffer />
-            <div className="section-content-background dots-pattern"></div>
+        <AnimatedComponent>
+          <div className="section sectionOurOffer">
+            <SectionTitle
+              title="Our offer"
+              subtitle="Find your perfect need"
+            />
+
+            <div className="sectionContent">
+              <SectionOurOffer />
+              <div className="section-content-background dots-pattern"></div>
+            </div>
           </div>
-        </div>
+        </AnimatedComponent>
 
         {/* Customer Testimonials */}
 
         <div className="section sectionCustomerTestimonials">
-          <SectionTitle
-            title="Customer Testimonials"
-            subtitle="What people say about us"
-          />
+          <AnimatedComponent>
+            <SectionTitle
+              title="Customer Testimonials"
+              subtitle="What people say about us"
+            />
+          </AnimatedComponent>
+
           <div className="sectionContent">
-            <SectionTestimonials />
+            <AnimatedComponent>
+              <SectionTestimonials />
+            </AnimatedComponent>
             <div className="section-content-background crosses-pattern"></div>
           </div>
         </div>
       </div>
 
-      <TireMarks />
+      <AnimatedComponent>
+        <TireMarks />
+      </AnimatedComponent>
 
       {/* Get a quote */}
       <div className="main-center">
         <div className="section sectionGetAQuote">
-          <SectionTitle
-            title="Get a quote"
-            subtitle="Let us know what you need"
-          />
+          <AnimatedComponent>
+            <SectionTitle
+              title="Get a quote"
+              subtitle="Let us know what you need"
+            />
+          </AnimatedComponent>
+
           <div className="sectionContent">
-            <SectionGetAQuote />
+            <AnimatedComponent>
+              <SectionGetAQuote />
+            </AnimatedComponent>
             <div className="section-content-background dots-pattern"></div>
           </div>
         </div>
@@ -85,16 +109,23 @@ function App() {
         {/* Reach us */}
 
         <div className="section sectionReachUs">
-          <SectionTitle
-            title="Reach us"
-            subtitle="And finally get what you care about"
-          />
+          <AnimatedComponent>
+            <SectionTitle
+              title="Reach us"
+              subtitle="And finally get what you care about"
+            />
+          </AnimatedComponent>
+
           <div className="sectionContent">
-            <SectionReachUs />
+            <AnimatedComponent>
+              <SectionReachUs />
+            </AnimatedComponent>
             <div className="section-content-background crosses-pattern"></div>
           </div>
         </div>
-      </div >
+      </div>
+
+
 
       <Footer />
     </>

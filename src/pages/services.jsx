@@ -4,6 +4,8 @@ import PagesTelebim from "../components/pages-telebim";
 import TireMarks from "../components/splitterTireMarks";
 import Footer from "../components/footer";
 
+import AnimatedComponent from "../components/Reveal";
+
 import "./services.css";
 
 function Subline(props) {
@@ -19,27 +21,29 @@ function Subline(props) {
 const ServiceCard = (props) => {
   return (
     <>
-      <div className={`service-card ${props.position}`}>
-        <div className={`service-card-text-box`}>
-          <h2 className={`service-card-title ${props.position}`}>
-            {props.title}
-          </h2>
-          <div className={`service-card-text ${props.position}`}>
-            {props.text}
-          </div>
-          <div className="service-card-button">
-            <button className="secondaryButton">
-              <span>Book appointment</span>
-            </button>
+      <AnimatedComponent>
+        <div className={`service-card ${props.position}`}>
+          <div className={`service-card-text-box`}>
+            <h2 className={`service-card-title ${props.position}`}>
+              {props.title}
+            </h2>
+            <div className={`service-card-text ${props.position}`}>
+              {props.text}
+            </div>
+            <div className="service-card-button">
+              <button className="secondaryButton">
+                <span>Book appointment</span>
+              </button>
+            </div>
+
+            <div className={`stylizedBox ${props.position}`}></div>
           </div>
 
-          <div className={`stylizedBox ${props.position}`}></div>
+          <div className={`service-card-photo-box ${props.position} stylizedBoxNoBG`}>
+            <div className={`service-card-photo ${props.photo} ${props.position}`}></div>
+          </div>
         </div>
-
-        <div className={`service-card-photo-box ${props.position} stylizedBoxNoBG`}>
-          <div className={`service-card-photo ${props.photo} ${props.position}`}></div>
-        </div>
-      </div>
+      </AnimatedComponent>
     </>
   )
 }

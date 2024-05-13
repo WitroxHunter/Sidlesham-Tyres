@@ -4,6 +4,7 @@ import Footer from "../components/footer";
 import Contact from "../components/sectionGetAQuote";
 import ReachUs from "../components/sectionReachUs"
 import SectionTitle from "../components/sectionTitle";
+import AnimatedComponent from "../components/Reveal";
 import "./contact-us.css";
 
 export default function ContactUs() {
@@ -14,27 +15,37 @@ export default function ContactUs() {
 
       <div className="main-center">
         <div className="title-box">
-          <SectionTitle
-            title="Get a quote"
-            subtitle="Let us know what you need"
-          />
+          <AnimatedComponent>
+            <SectionTitle
+              title="Get a quote"
+              subtitle="Let us know what you need"
+            />
+          </AnimatedComponent>
         </div>
 
 
         <div className="article-section">
-          <Contact />
-          <div className="article-section-background dots-pattern"></div>
+          <AnimatedComponent>
+            <Contact />
+          </AnimatedComponent>
+
+          <div className="article-section-background crosses-pattern"></div>
         </div>
 
         <div className="title-box">
-          <SectionTitle
-            title="Reach us"
-            subtitle="And finally get what you care about"
-          />
+          <AnimatedComponent>
+            <SectionTitle
+              title="Reach us"
+              subtitle="And finally get what you care about"
+            />
+          </AnimatedComponent>
         </div>
 
         <div className="article-section">
-          <ReachUs />
+          <AnimatedComponent>
+            <ReachUs />
+          </AnimatedComponent>
+
           <div className="article-section-background dots-pattern"></div>
         </div>
       </div>
