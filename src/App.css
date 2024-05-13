@@ -857,6 +857,10 @@ form {
     overflow: hidden;
   }
 
+  .rightSide img {
+    width: 50%;
+  }
+
   .main-center {
     width: 100%;
     padding: 0 10px;
@@ -1011,5 +1015,11 @@ form {
   .smallTireMarks,
   .bigTireMarks {
     animation-duration: 30s;
+  }
+}
+
+@media (max-width: 660px) {
+  .rightSide img {
+    width: 80%;
   }
 }
