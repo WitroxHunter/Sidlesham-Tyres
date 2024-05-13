@@ -522,7 +522,7 @@ button {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   .pages-telebim-background {
     height: 90svh;
     margin: 50px 10px;
