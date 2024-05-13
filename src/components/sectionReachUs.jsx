@@ -41,6 +41,7 @@ export default function sectionReachUs() {
             <span>enquiries@sidleshamtyres.co.uk</span>
           </div>
         </div>
+
         <div className="rightSide stylizedBox">
           <iframe
             className="googleMaps"
