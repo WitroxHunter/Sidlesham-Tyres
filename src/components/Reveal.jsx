@@ -15,9 +15,6 @@ const AnimatedComponent = ({ children }) => {
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }} // Końcowe style animacji
             transition={{
                 duration: 0.5,
-                type: "spring",
-                stiffness: 200,
-                damping: 15
             }} // Czas trwania animacji
             style={{ width: '100%' }} // Ustawienie na 100% szerokości
         >
