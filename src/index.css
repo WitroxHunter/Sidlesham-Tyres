@@ -386,7 +386,6 @@ button {
   display: flex;
 
   margin-top: 3px;
-  font-size: var(--FontSmall);
 }
 
 .footer-content-icon-background {

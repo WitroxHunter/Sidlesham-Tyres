@@ -11,8 +11,6 @@ function Subline(props) {
     <>
       <div className="sectionSubLine">
         <div className="sectionLine"></div>
-        <div className="section-line-text">{props.title}</div>
-        <div className="sectionLine"></div>
       </div>
     </>
   );
@@ -22,7 +20,7 @@ const ServiceCard = (props) => {
   return (
     <>
       <div className={`service-card ${props.position}`}>
-        <div className="service-card-text-box">
+        <div className={`service-card-text-box`}>
           <h2 className={`service-card-title ${props.position}`}>
             {props.title}
           </h2>
@@ -31,7 +29,7 @@ const ServiceCard = (props) => {
           </div>
           <div className="service-card-button">
             <button className="secondaryButton">
-              Book appointment
+              <span>Book appointment</span>
             </button>
           </div>
 
@@ -68,20 +66,68 @@ export default function Services() {
             title="Wheel balancing"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
-          <div className="article-section-background dots-pattern"></div>
+          <div className="article-section-background crosses-pattern"></div>
         </div>
+
+        <Subline />
 
         <div className="article-section">
           <ServiceCard
             position="right"
-            photo="wheel-balancing-background"
-            title="Wheel balancing"
+            photo="tube-replacements-background"
+            title="Tube replacements"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
+          />
+          <div className="article-section-background connected-dots-pattern"></div>
+        </div>
+
+        <Subline />
+
+        <div className="article-section">
+          <ServiceCard
+            position="left"
+            photo="tyre-replacements-background"
+            title="Tyre replacements"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
+          />
+          <div className="article-section-background crosses-pattern"></div>
+        </div>
+
+        <Subline />
+
+        <div className="article-section">
+          <ServiceCard
+            position="right"
+            photo="puncture-repairs-background"
+            title="Puncture repairs"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
           />
           <div className="article-section-background dots-pattern"></div>
         </div>
 
-        <Subline title="Tube replacements" />
+        <Subline />
+
+        <div className="article-section">
+          <ServiceCard
+            position="left"
+            photo="pressure-check-background"
+            title="Pressure check"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
+          />
+          <div className="article-section-background crosses-pattern"></div>
+        </div>
+
+        <Subline />
+
+        <div className="article-section">
+          <ServiceCard
+            position="right"
+            photo="tyre-check-background"
+            title="Tyre check"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin venenatis pulvinar enim quis viverra. Pellentesque urna nulla, ultrices ac neque nec, gravida tempor lorem. Quisque risus turpis, tristique ut nunc non, semper commodo orci. Cras luctus arcu at facilisis sodales. Donec varius dapibus luctus. Aliquam feugiat, urna nec maximus vehicula, quam enim dignissim nibh, non porta ipsum massa ac nisi. Maecenas sit amet lacus augue. In cursus efficitur convallis."
+          />
+          <div className="article-section-background connected-dots-pattern"></div>
+        </div>
       </div>
 
       <Footer />
