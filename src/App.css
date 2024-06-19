@@ -615,6 +615,10 @@ form {
 .additional-info {
   font-size: var(--FontMid);
   font-weight: 600;
+
+  border-radius: 20px;
+  background: rgb(39, 39, 39);
+  border: 3px solid #1c1c1c;
 }
 
 .contentReachUs {
