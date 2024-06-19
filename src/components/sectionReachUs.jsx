@@ -63,7 +63,7 @@ export default function sectionReachUs() {
           </div>
         </div>
 
-        <div>
+        <div className="stylizedBox additional-info">
           {data ? (
             <div className="additional-information">{message}</div>
           ) : (
