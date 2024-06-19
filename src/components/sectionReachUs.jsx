@@ -1,5 +1,7 @@
 import call from "../assets/icons/call.svg";
 import mail from "../assets/icons/mail.svg";
+import data from "../assets/data/data.json";
+import { useState, useEffect } from "react";
 
 function WorkingHours(props) {
   return (
@@ -13,6 +15,11 @@ function WorkingHours(props) {
 }
 
 export default function sectionReachUs() {
+  const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    setMessage(data.message);
+  }, []);
   return (
     <>
       <div className="contentReachUs">
@@ -53,6 +60,13 @@ export default function sectionReachUs() {
             title="Google Map"
           ></iframe>
         </div>
+      </div>
+      <div>
+        {data ? (
+          <div className="additional-information">{message}</div>
+        ) : (
+          <p>Loading...</p>
+        )}
       </div>
     </>
   );
