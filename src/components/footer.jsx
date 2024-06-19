@@ -1,7 +1,7 @@
 import location from "../assets/icons/location.svg";
 import call from "../assets/icons/call.svg";
 import mail from "../assets/icons/mail.svg";
-import notfound from "../assets/NotFound.png";
+import logo from "../assets/logo.svg";
 
 function WorkingHours(props) {
   return (
@@ -20,7 +20,7 @@ export default function Footer() {
       <div className="footer">
         <div className="footer-content">
           <div className="footer-section">
-            <img src={notfound} />
+            <img src={logo} />
           </div>
           <div className="footer-section">
             <div className="footer-content-middle">

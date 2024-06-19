@@ -12,7 +12,7 @@ app.use(json());
 app.post("/send", (req, res) => {
   const { name, email, phoneNumber, vehicleType, serviceNeeded } = req.body;
 
-  // Nadawca (konfiguracja w .env)
+  // Provider (config in .env)
   const transporter = createTransport({
     service: "Gmail",
     host: "smtp.gmail.com",
@@ -26,7 +26,7 @@ app.post("/send", (req, res) => {
 
   const mailOptions = {
     from: email,
-    to: "lolxdyoloelo@gmail.com", // Odbiorca
+    to: "lolxdyoloelo@gmail.com", // Receiver
     subject: `Contact Form Message from ${name}`,
     text: `You have received a new message from the contact form.
 

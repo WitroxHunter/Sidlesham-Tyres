@@ -1,5 +1,5 @@
 import hamburger from "../assets/icons/hamburger.svg";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo_wide.svg";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled, { keyframes } from "styled-components";

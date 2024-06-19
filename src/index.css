@@ -151,6 +151,19 @@ button {
   z-index: 500;
 }
 
+.headerLeft a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.headerLeft img {
+  height: 60%;
+}
+
 .headerCenter {
   width: 55%;
   height: 100%;
@@ -317,6 +330,7 @@ button {
 
 .footer {
   margin-top: 100px;
+  padding-top: 50px;
   height: fit-content;
   width: 100%;
   justify-content: center;
@@ -338,18 +352,7 @@ button {
   align-items: center;
 }
 
-.footer-content-left,
-.footer-content-middle,
 .footer-content-right {
-  width: 100%;
-}
-
-.footer-content-middle {
-  padding-top: 50px;
-}
-
-.footer-content-right {
-  padding-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -411,7 +414,7 @@ button {
 
 .footer-bottom {
   text-align: center;
-  padding: 10px;
+  padding: 30px;
   font-size: 13px;
 }
 

@@ -53,10 +53,7 @@ function App() {
       <div className="main-center">
         <AnimatedComponent>
           <div className="section sectionOurOffer">
-            <SectionTitle
-              title="Our offer"
-              subtitle="Find your perfect need"
-            />
+            <SectionTitle title="Our offer" subtitle="Find your perfect need" />
 
             <div className="sectionContent">
               <SectionOurOffer />
@@ -73,14 +70,12 @@ function App() {
               title="Customer Testimonials"
               subtitle="What people say about us"
             />
-          </AnimatedComponent>
 
-          <div className="sectionContent">
-            <AnimatedComponent>
+            <div className="sectionContent">
               <SectionTestimonials />
-            </AnimatedComponent>
-            <div className="section-content-background crosses-pattern"></div>
-          </div>
+              <div className="section-content-background crosses-pattern"></div>
+            </div>
+          </AnimatedComponent>
         </div>
       </div>
 
@@ -96,14 +91,13 @@ function App() {
               title="Get a quote"
               subtitle="Let us know what you need"
             />
-          </AnimatedComponent>
 
-          <div className="sectionContent">
-            <AnimatedComponent>
+            <div className="sectionContent">
               <SectionGetAQuote />
-            </AnimatedComponent>
-            <div className="section-content-background dots-pattern"></div>
-          </div>
+
+              <div className="section-content-background dots-pattern"></div>
+            </div>
+          </AnimatedComponent>
         </div>
 
         {/* Reach us */}
@@ -114,18 +108,14 @@ function App() {
               title="Reach us"
               subtitle="And finally get what you care about"
             />
-          </AnimatedComponent>
 
-          <div className="sectionContent">
-            <AnimatedComponent>
+            <div className="sectionContent">
               <SectionReachUs />
-            </AnimatedComponent>
-            <div className="section-content-background crosses-pattern"></div>
-          </div>
+              <div className="section-content-background crosses-pattern"></div>
+            </div>
+          </AnimatedComponent>
         </div>
       </div>
-
-
 
       <Footer />
     </>
