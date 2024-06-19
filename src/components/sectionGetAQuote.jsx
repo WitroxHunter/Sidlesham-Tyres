@@ -1,8 +1,41 @@
+import React, { useRef } from "react";
+
 export default function SectionGetAQuote(props) {
+  const form = useRef();
+
+  const sendEmail = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form.current);
+    const formObject = Object.fromEntries(formData.entries());
+    console.log(formData);
+
+    try {
+      const response = await fetch("http://localhost:5000/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formObject),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Email sent successfully!");
+      } else {
+        alert("Error sending email: " + result.error);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("Error sending email: " + error.toString());
+    }
+  };
+
   return (
     <>
       <div className="formContainer stylizedBox">
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="formTopPart">
             <div className="leftSide">
               <div className="formInput">
