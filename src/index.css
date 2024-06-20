@@ -557,10 +557,3 @@ button {
     margin: 10px 0;
   }
 }
-
-.additional-information {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-}

@@ -233,7 +233,8 @@
   display: flex;
   align-items: center;
   align-content: center;
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 20px;
   width: 100%;
 }
 
@@ -505,6 +506,12 @@
   flex-direction: column;
 }
 
+.recaptcha-box {
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .formInput label {
   color: #909090;
   font-size: var(--FontVerySmall);
@@ -613,12 +620,16 @@ form {
 }
 
 .additional-info {
-  font-size: var(--FontMid);
-  font-weight: 600;
-
+  padding: 10px;
   border-radius: 20px;
   background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
   border: 3px solid #1c1c1c;
+}
+
+.additional-information {
+  text-align: center;
+  font-size: var(--FontMid);
+  font-weight: 600;
 }
 
 .contentReachUs {

@@ -74,7 +74,10 @@ export default function sectionReachUs() {
 
         <div className="additional-info">
           {data ? (
-            <div className="additional-information">{message}</div>
+            <>
+              <div>Additional information:</div>
+              <div className="additional-information">{message}</div>
+            </>
           ) : (
             <p>Loading...</p>
           )}

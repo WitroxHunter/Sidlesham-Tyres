@@ -74,10 +74,12 @@ export default function SectionGetAQuote(props) {
             <textarea name="serviceNeeded" required></textarea>
           </div>
 
-          <ReCAPTCHA
-            sitekey="6Ld4Wf0pAAAAAMkYUiUG_8Tb4xAofKOikiieekiV"
-            onChange={(val) => setCapVal(val)}
-          />
+          <div className="recaptcha-box">
+            <ReCAPTCHA
+              sitekey="6Ld4Wf0pAAAAAMkYUiUG_8Tb4xAofKOikiieekiV"
+              onChange={(val) => setCapVal(val)}
+            />
+          </div>
 
           <button disabled={!capVal} className="formButtonDiv">
             <div>
