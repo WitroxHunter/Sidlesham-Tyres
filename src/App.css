@@ -1049,6 +1049,10 @@ form {
   .bigTireMarks {
     animation-duration: 30s;
   }
+
+  .additional-info-title {
+    margin: auto;
+  }
 }
 
 @media (max-width: 660px) {
