@@ -11,11 +11,13 @@ import "./services.css";
 function Subline(props) {
   return (
     <>
-      <AnimatedComponent>
+      {/* <AnimatedComponent>
         <div className="sectionSubLine">
           <div className="sectionLine"></div>
         </div>
-      </AnimatedComponent>
+      </AnimatedComponent> */}
+      <br />
+      <br />
     </>
   );
 }

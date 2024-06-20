@@ -25,6 +25,8 @@
   gap: 20px;
   width: 100%;
   margin-bottom: 20px;
+
+  perspective: 300px;
 }
 
 .article-flex-forward {
@@ -38,6 +40,15 @@
 .article-text {
   width: 100%;
   text-align: justify;
+
+  padding: 15px;
+  border-radius: 10px;
+  border: 3px solid #1c1c1c;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
+
+  /* transform: rotateX(0deg) rotateY(10deg);
+  transform-style: preserve-3d; */
 }
 
 .article-photo-box {
@@ -50,7 +61,6 @@
 }
 
 @media (max-width: 860px) {
-
   .article-flex-forward,
   .article-flex-reverse {
     flex-direction: column;
