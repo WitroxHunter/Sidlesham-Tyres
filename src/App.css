@@ -626,6 +626,13 @@ form {
   border: 3px solid #1c1c1c;
 }
 
+.additional-info-title {
+  padding: 0 10px;
+  width: fit-content;
+  border-radius: 5px;
+  background-color: var(--IconsBackground);
+}
+
 .additional-information {
   text-align: center;
   font-size: var(--FontMid);
