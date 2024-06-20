@@ -445,6 +445,73 @@ button {
 
   background: linear-gradient(0deg, #070707ff 5%, #07070700 100%);
   transform: scaleY(1.05);
+
+  z-index: 60;
+}
+
+.scroll-down-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  content: "";
+
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #333;
+  transform: translateX(-50%);
+
+  z-index: 70;
+  transition: 0.2s;
+  animation: moving-down 5s infinite ease-in-out;
+  opacity: 1;
+}
+
+.scroll-down-button:hover {
+  background-color: #222;
+}
+
+.scroll-down-button-scrolled {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  content: "";
+
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #333;
+  transform: translateX(-50%);
+
+  z-index: 70;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+@keyframes moving-down {
+  0% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  5% {
+    transform: translateY(10px) translateX(-50%);
+  }
+  10% {
+    transform: translateY(0px) translateX(-50%);
+  }
+  15% {
+    transform: translateY(10px) translateX(-50%);
+  }
+  20% {
+    transform: translateY(0px) translateX(-50%);
+  }
 }
 
 /* .pages-telebim-background::before {
