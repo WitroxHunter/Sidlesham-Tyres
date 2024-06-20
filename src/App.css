@@ -617,7 +617,7 @@ form {
   font-weight: 600;
 
   border-radius: 20px;
-  background: rgb(39, 39, 39);
+  background: linear-gradient(180deg, #272727 0%, #1c1c1c 100%);
   border: 3px solid #1c1c1c;
 }
 
